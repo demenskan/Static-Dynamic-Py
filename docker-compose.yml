@@ -1,0 +1,19 @@
+version: "3.3"
+
+services:
+
+  website:
+    image: StatDynPy:v1
+    build: .
+    volumes:
+      - ./src:/usr/src/app/
+    ports:
+      - "8001:8000"
+    environment:
+      SNAS_DB_HOST: snas_mysql
+      SNAS_DB_NAME: snas_ci
+      SNAS_DB_USER: snas_ci
+      SNAS_DB_PASS: "QAd@23232dda/."
+      SNAS_ENVIRONMENT: development
+      WERKZEUG_DEBUG_PIN: "off"
+

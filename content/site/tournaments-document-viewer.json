@@ -1,0 +1,41 @@
+{
+    "wrapper" : "single-post.html",
+    "single_values" : {
+        "page_title" : "SNISL - {{VAR}}tournaments/{SEASON}.json|{TOURNAMENT}:name{{/VAR}}"
+    },
+    "sections" : {
+        "header" : {
+            "type" : "direct_file",
+            "template_file" : "views/main/header.html"
+        },
+        "navbar" : {
+            "type" : "direct_file",
+            "template_file" : "views/main/navbar.html"
+        },
+        "hero" : {
+            "type" : "direct_file",
+            "template_file" : "views/main/hero_empty.html"
+        },
+        "featured" : {
+            "type" : "content_file",
+            "template_file" : "views/tournaments/document-viewer.html",
+            "content_file" : "json/tournaments/{SEASON}/{TOURNAMENT}/documents/{ID}.json"
+        },
+        "comments" : {
+            "type": "disabled"
+        },
+        "sidebar" : {
+            "type": "parameted_file",
+            "template_file" : "{{VAR}}tournaments/{SEASON}.json|{TOURNAMENT}:sidebar{{/VAR}}",
+            "parameters" : {
+                "SEASON" : "{SEASON}",
+                "TOURNAMENT" : "{TOURNAMENT}",
+                "LOGO" : "{{VAR}}tournaments/{SEASON}.json|{TOURNAMENT}:logo_mini{{/VAR}}"
+            }
+        },
+        "footer" : {
+            "type" : "direct_file",
+            "template_file" : "views/main/footer.html"
+        }
+    }
+}
