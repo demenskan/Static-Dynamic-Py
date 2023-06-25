@@ -1,0 +1,17 @@
+{
+    "categories" : {
+        "instructor" : "categories.json",
+        "arguments" : {
+            "category_id" : "string"
+        }
+    },
+    "posts" : {
+        "instructor" : "post-list.json"
+    },
+    "single_post" : {
+        "instructor" : "single-post.json",
+        "arguments" : {
+            "post_id" : "integer"
+        }
+    }
+}

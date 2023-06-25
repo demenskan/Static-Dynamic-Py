@@ -1,14 +1,17 @@
 import json
 import os
 from dotenv import load_dotenv
-from dbconnect import *
 class Generator:
     def getPage(self, instructor, params):
         try:
+            # Load config file
+            config=generator.read_file("json/system/config.json","json","//")
+            if config == "FileNotFoundError":
+                return ("Config File not found")
             # Load instructor File
-            instructor_data=self.read_file("json/instructors/"+instructor,"text","//")
+            instructor_data=self.read_file(config['INSTRUCTORS_FOLDER'] +instructor,"text","//")
             if instructor_data == "FileNotFoundError":
-                return ("Sin archivo instructor")
+                return ("Instructor file not found")
             # substitute all the params instances
             for key in params:
                 instructor_data=instructor_data.replace("{"+str(key)+"}",str(params[key]))
@@ -17,15 +20,15 @@ class Generator:
             # All occurrences of substring in string
             instructor_data=self.substitute_variables(instructor_data)
             instructions=json.loads(instructor_data)
-            #load wrapper
-            wrapper_stream=self.read_file("templates/" + instructions['wrapper'],"text")
-            if wrapper_stream == "FileNotFoundError":
-                return ("Sin archivo wrapper")
+            #load layout
+            layout_stream=self.read_file(config["LAYOUTS_FOLDER"] + instructions['layout'],"text")
+            if layout_stream == "FileNotFoundError":
+                return ("Layout file not found")
             for key in instructions['single_values']:
-                wrapper_stream=wrapper_stream.replace("{{@" + str(key) + "}}", str(instructions['single_values'][key]))
+                layout_stream=layout_stream.replace("{{@" + str(key) + "}}", str(instructions['single_values'][key]))
             for key in instructions['sections']:
                 if instructions['sections'][key]['type'] == "disabled":
-                    wrapper_stream=wrapper_stream.replace("{{@" + str(key) + "}}", "")
+                    layout_stream=layout_stream.replace("{{@" + str(key) + "}}", "")
                 elif instructions['sections'][key]['type'] == "content_file":
                     view_stream=self.read_file(instructions['sections'][key]['template_file'],"text")
                     content_json=self.read_file(instructions['sections'][key]['content_file'],"json","//")
@@ -67,17 +70,17 @@ class Generator:
                             except Error:
                                 # not found in the original string
                                 subtemplate = '' # apply your error handling
-                    wrapper_stream=wrapper_stream.replace("{{@" + key + "}}",view_stream)
+                    layout_stream=layout_stream.replace("{{@" + key + "}}",view_stream)
                 elif instructions['sections'][key]['type'] == "parameted_file":
                     view_stream=self.read_file(instructions['sections'][key]['template_file'],"text")
                     for element in instructions['sections'][key]['parameters']:
                         view_stream=view_stream.replace("{{@" + element + "}}", str(instructions['sections'][key]['parameters'][element]))
-                    wrapper_stream=wrapper_stream.replace("{{@" + key + "}}",view_stream)
+                    layout_stream=layout_stream.replace("{{@" + key + "}}",view_stream)
                 else:
                     #Direct file
                     view_stream=self.read_file(instructions['sections'][key]['template_file'],"text")
-                    wrapper_stream=wrapper_stream.replace("{{@" + key + "}}",view_stream)
-            return wrapper_stream
+                    layout_stream=layout_stream.replace("{{@" + key + "}}",view_stream)
+            return layout_stream
             #return a
         except Exception as e:
             return str(e)

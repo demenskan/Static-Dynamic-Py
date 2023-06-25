@@ -3,7 +3,7 @@ version: "3.3"
 services:
 
   website:
-    image: StatDynPy:v1
+    #image: StatDynPy:v1
     build: .
     volumes:
       - ./src:/usr/src/app/
