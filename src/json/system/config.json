@@ -8,8 +8,8 @@
     "INSTRUCTORS_FOLDER" : "json/instructors/",
     //Metavariables are for making instructors more flexible that can act in different ways according to the arguments given
     "METAVARIABLES_FOLDER" : "json/metavariables/",
-    //Layouts are the skeleton of the page to display
-    "LAYOUTS_FOLDER" : "json/layouts/",
+    //Layouts are the skeleton of the page to display. It's relative to the active template folder
+    "LAYOUTS_FOLDER" : "layouts/",
     //The Jsons general content of the site should be here
     "CONTENT_FOLDER" : "json/content/",
     //Where to store the templates

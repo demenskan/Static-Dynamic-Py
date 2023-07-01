@@ -1,5 +1,5 @@
 {
-    "layout" : "index.html",
+    "layout" : "cover.html",
     "single_values" : {
         "page_title" : "Website sample with StatDynPy"
     },

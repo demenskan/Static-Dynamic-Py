@@ -1,16 +1,17 @@
 import json
+import traceback
 import os
 from dotenv import load_dotenv
 class Generator:
     def getPage(self, instructor, params):
         try:
             # Load config file
-            config=generator.read_file("json/system/config.json","json","//")
-            if config == "FileNotFoundError":
+            config=self.read_file("json/system/config.json","json","//")
+            if str(config).split()[0] == "FileNotFoundError:":
                 return ("Config File not found")
             # Load instructor File
             instructor_data=self.read_file(config['INSTRUCTORS_FOLDER'] +instructor,"text","//")
-            if instructor_data == "FileNotFoundError":
+            if str(instructor_data).split()[0] == "FileNotFoundError:":
                 return ("Instructor file not found")
             # substitute all the params instances
             for key in params:
@@ -21,9 +22,9 @@ class Generator:
             instructor_data=self.substitute_variables(instructor_data)
             instructions=json.loads(instructor_data)
             #load layout
-            layout_stream=self.read_file(config["LAYOUTS_FOLDER"] + instructions['layout'],"text")
-            if layout_stream == "FileNotFoundError":
-                return ("Layout file not found")
+            layout_stream=self.read_file("templates/" + config["CURRENT_TEMPLATE"] +  config["LAYOUTS_FOLDER"] +  instructions['layout'],"text")
+            if str(layout_stream).split()[0] == "FileNotFoundError:":
+                return ("Layout file not found: " + str(layout_stream).split()[1])
             for key in instructions['single_values']:
                 layout_stream=layout_stream.replace("{{@" + str(key) + "}}", str(instructions['single_values'][key]))
             for key in instructions['sections']:
@@ -31,7 +32,11 @@ class Generator:
                     layout_stream=layout_stream.replace("{{@" + str(key) + "}}", "")
                 elif instructions['sections'][key]['type'] == "content_file":
                     view_stream=self.read_file(instructions['sections'][key]['template_file'],"text")
+                    if str(view_stream).split()[0] == "FileNotFoundError:":
+                        return ("View file not found: " + str(view_stream).split()[1])
                     content_json=self.read_file(instructions['sections'][key]['content_file'],"json","//")
+                    if str(content_stream).split()[0] == "FileNotFoundError:":
+                        return ("Content file not found: " + str(content_stream).split()[1])
                     for element in content_json:
                         if (type(content_json[element]) is str):
                             view_stream=view_stream.replace("{{@" + element + "}}", str(content_json[element]))
@@ -83,7 +88,8 @@ class Generator:
             return layout_stream
             #return a
         except Exception as e:
-            return str(e)
+            return traceback.format_exc()
+            #return "lolo:" + str(e)
 
 
     def read_file(self, filename, mode, comment_string=""):
@@ -123,9 +129,5 @@ class Generator:
             var_json=self.read_file(var_file,"json","//")
             stream=stream.replace(variable_with_marks[position],reduce(lambda x,y : x[y],var_elements[1].split(":"),var_json))
             #stream=stream.replace(variable_with_marks[position],var_json[var_elements[1]])
-
         return stream
 
-class Token:
-    def generateToken(self, username, input_password):
-        return False

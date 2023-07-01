@@ -1,4 +1,7 @@
 {
+    "home" : {
+        "instructor" : "home.json"
+    },
     "categories" : {
         "instructor" : "categories.json",
         "arguments" : {
