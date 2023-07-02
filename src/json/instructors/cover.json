@@ -1,50 +1,55 @@
 {
     "layout" : "cover.html",
     "single_values" : {
-        "page_title" : "Website sample with StatDynPy"
+        "page_title" : "Website sample with StatDynPy",
+        "template_path" : "templates/01-newsfeed/"
     },
     "sections" : {
         "header" : {
-            "type" : "direct_file",
-            //the layouts and views' path must be relative to the designed template's folder
-            "view_file" : "views/global/header.html"
+            "type" : "parameted_file",
+            //the views' path must be relative to the designed template's folder
+            "view_file" : "views/global/header.html",
+            "parameters" : {
+                "date" : "Sep. 07, 1930"
+            }
         },
         "navbar" : {
             "type" : "content_file",
             "view_file" : "views/global/navbar.html",
-            "content_file" : "json/cover/hero.json"
+            "content_file" : "json/content/global/navbar.json"
         },
-        "hero" : {
+        "latest_news" : {
            "type" : "content_file",
-           "view_file" : "views/cover/hero.html",
-           "content_file" : "json/cover/hero.json"
-        },
-        "featured-area" : {
-            "type" : "content_file",
-            "view_file" : "views/cover/featured-area.html",
-            "content_file" : "json/cover/featured.json"
-        },
-        "popular-news-area" : {
-            "type" : "content_file",
-            "view_file" : "views/cover/popular-news-area.html",
-            "content_file" : "json/cover/popular-news.json"
-        },
-        "videos-post-area" : {
-            "type" : "direct_file",
-            "view_file" : "views/cover/videos-post-area.html"
-        },
-        "editors-pick-post-area" : {
-            "type" : "content_file",
-            "content_file" : "json/cover/editors-pick-post-area.json",
-            "view_file" : "views/cover/editors-pick-post-area.html"
-        },
-        "footer-add-area" : {
-            "type" : "direct_file",
-            "view_file" : "views/cover/footer-add-area.html"
-        },
-        "footer" : {
-            "type" : "direct_file",
-            "view_file" : "views/main/footer.html"
+           "view_file" : "views/cover/latestnews.html",
+           "content_file" : "json/content/cover/latestnews.json"
         }
+//        ,
+//        "featured-area" : {
+//            "type" : "content_file",
+//            "view_file" : "views/cover/featured-area.html",
+//            "content_file" : "json/cover/featured.json"
+//       },
+//        "popular-news-area" : {
+//            "type" : "content_file",
+//            "view_file" : "views/cover/popular-news-area.html",
+//            "content_file" : "json/cover/popular-news.json"
+//        },
+//       "videos-post-area" : {
+//            "type" : "direct_file",
+//            "view_file" : "views/cover/videos-post-area.html"
+//        },
+//        "editors-pick-post-area" : {
+//            "type" : "content_file",
+//            "content_file" : "json/cover/editors-pick-post-area.json",
+//            "view_file" : "views/cover/editors-pick-post-area.html"
+//        },
+//        "footer-add-area" : {
+//            "type" : "direct_file",
+//            "view_file" : "views/cover/footer-add-area.html"
+//        },
+//        "footer" : {
+//           "type" : "direct_file",
+//            "view_file" : "views/main/footer.html"
+//        }
     }
 }
