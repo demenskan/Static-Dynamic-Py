@@ -6,44 +6,45 @@
     "sections" : {
         "header" : {
             "type" : "direct_file",
-            //the path must be relative to the designed template's folder
-            "template_file" : "layouts/header.html"
+            //the layouts and views' path must be relative to the designed template's folder
+            "view_file" : "views/global/header.html"
         },
         "navbar" : {
-            "type" : "direct_file",
-            "template_file" : "layouts/navbar.html"
+            "type" : "content_file",
+            "view_file" : "views/global/navbar.html",
+            "content_file" : "json/cover/hero.json"
         },
         "hero" : {
            "type" : "content_file",
-           "template_file" : "views/cover/hero.html",
+           "view_file" : "views/cover/hero.html",
            "content_file" : "json/cover/hero.json"
         },
         "featured-area" : {
             "type" : "content_file",
-            "template_file" : "views/cover/featured-area.html",
+            "view_file" : "views/cover/featured-area.html",
             "content_file" : "json/cover/featured.json"
         },
         "popular-news-area" : {
             "type" : "content_file",
-            "template_file" : "views/cover/popular-news-area.html",
+            "view_file" : "views/cover/popular-news-area.html",
             "content_file" : "json/cover/popular-news.json"
         },
         "videos-post-area" : {
             "type" : "direct_file",
-            "template_file" : "views/cover/videos-post-area.html"
+            "view_file" : "views/cover/videos-post-area.html"
         },
         "editors-pick-post-area" : {
             "type" : "content_file",
             "content_file" : "json/cover/editors-pick-post-area.json",
-            "template_file" : "views/cover/editors-pick-post-area.html"
+            "view_file" : "views/cover/editors-pick-post-area.html"
         },
         "footer-add-area" : {
             "type" : "direct_file",
-            "template_file" : "views/cover/footer-add-area.html"
+            "view_file" : "views/cover/footer-add-area.html"
         },
         "footer" : {
             "type" : "direct_file",
-            "template_file" : "views/main/footer.html"
+            "view_file" : "views/main/footer.html"
         }
     }
 }

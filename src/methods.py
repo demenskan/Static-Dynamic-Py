@@ -31,7 +31,7 @@ class Generator:
                 if instructions['sections'][key]['type'] == "disabled":
                     layout_stream=layout_stream.replace("{{@" + str(key) + "}}", "")
                 elif instructions['sections'][key]['type'] == "content_file":
-                    view_stream=self.read_file(instructions['sections'][key]['template_file'],"text")
+                    view_stream=self.read_file(instructions['sections'][key]['view_file'],"text")
                     if str(view_stream).split()[0] == "FileNotFoundError:":
                         return ("View file not found: " + str(view_stream).split()[1])
                     content_json=self.read_file(instructions['sections'][key]['content_file'],"json","//")
@@ -77,13 +77,13 @@ class Generator:
                                 subtemplate = '' # apply your error handling
                     layout_stream=layout_stream.replace("{{@" + key + "}}",view_stream)
                 elif instructions['sections'][key]['type'] == "parameted_file":
-                    view_stream=self.read_file(instructions['sections'][key]['template_file'],"text")
+                    view_stream=self.read_file(instructions['sections'][key]['view_file'],"text")
                     for element in instructions['sections'][key]['parameters']:
                         view_stream=view_stream.replace("{{@" + element + "}}", str(instructions['sections'][key]['parameters'][element]))
                     layout_stream=layout_stream.replace("{{@" + key + "}}",view_stream)
                 else:
                     #Direct file
-                    view_stream=self.read_file(instructions['sections'][key]['template_file'],"text")
+                    view_stream=self.read_file(instructions['sections'][key]['view_file'],"text")
                     layout_stream=layout_stream.replace("{{@" + key + "}}",view_stream)
             return layout_stream
             #return a
