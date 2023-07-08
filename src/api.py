@@ -9,7 +9,7 @@ generator=Generator()
 
 @app.route("/")
 def RootRequest():
-    return generator.getPage("cover.json", {})
+    return generator.getPage("index.json", {})
 @app.route("/test")
 def Test():
     config=generator.read_file("json/murakatasssystem/config.json","json","//")

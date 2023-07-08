@@ -10,9 +10,13 @@ class Generator:
             if str(config).split()[0] == "FileNotFoundError:":
                 return ("Config File not found")
             # Load instructor File
-            instructor_data=self.read_file(config['INSTRUCTORS_FOLDER'] +instructor,"text","//")
+            if config['INSTRUCTORS_FOLDER'] == "@@template" :
+                instructor_path=config['TEMPLATES_FOLDER'] + config['CURRENT_TEMPLATE'] +  'instructors/'
+            else:
+                instructor_path=config['INSTRUCTORS_FOLDER']
+            instructor_data=self.read_file(instructor_path + instructor,"text","//")
             if str(instructor_data).split()[0] == "FileNotFoundError:":
-                return ("Instructor file not found")
+                return ("Instructor file not found: " + str(instructor_data).split()[1])
             # substitute all the params instances
             for key in params:
                 instructor_data=instructor_data.replace("{"+str(key)+"}",str(params[key]))

@@ -4,8 +4,11 @@
     // NOTE: The folders entries MUST end with a trailing slash
     // Where to look for the URI's definitions and their parameters
     "URIS_FILE" : "json/system/uri.json",
-    // where to look for the instructors file, the layout's backbone
-    "INSTRUCTORS_FOLDER" : "json/instructors/",
+    // the instructors files connect all the pieces together, they say
+    // which views should use and how to fill them. If you are using multiple templates,
+    // you can define this directive as '@@template', which will tie it to the 'instructors' folder that each template has.
+    // Otherwise you can define a specific folder here
+    "INSTRUCTORS_FOLDER" : "@@template",
     //Metavariables are for making instructors more flexible that can act in different ways according to the arguments given
     "METAVARIABLES_FOLDER" : "json/metavariables/",
     //Layouts are the skeleton of the page to display. It's relative to the active template folder

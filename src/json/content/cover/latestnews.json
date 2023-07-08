@@ -3,12 +3,12 @@
     "items" : {
         "0" : {
             "url" : "/news/landscape",
-            "image" : "global_assets/images/news_thumbnail2.jpg",
+            "image" : "static/global/images/news_thumbnail2.jpg",
             "caption" : "See this landscape!"
         },
         "1" : {
             "url" : "/news/vacations",
-            "image" : "global_assets/images/news_thumbnail3.jpg",
+            "image" : "static/global/images/news_thumbnail3.jpg",
             "caption" : "Or maybe this one"
         },
         "2" : {
@@ -18,12 +18,12 @@
         },
         "3" : {
             "url" : "news/just-a-copy",
-            "image" : "global_assets/images/news_thumbnail2.jpg",
+            "image" : "static/global/images/news_thumbnail2.jpg",
             "caption" : "This is a copy of #0"
         },
         "4" : {
             "url" : "/technology",
-            "image" : "global_assets/images/news_thumbnail3.jpg",
+            "image" : "static/global/images/news_thumbnail3.jpg",
             "caption" : "And this of #1"
         }
     }

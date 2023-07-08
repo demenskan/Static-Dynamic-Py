@@ -1,5 +1,5 @@
 {
-    "layout" : "cover.html",
+    "layout" : "index.html",
     "single_values" : {
         "page_title" : "Website sample with StatDynPy",
         "template_path" : "templates/01-newsfeed/"
@@ -18,22 +18,22 @@
             "view_file" : "views/global/navbar.html",
             "content_file" : "json/content/global/navbar.json"
         },
-        "latest_news" : {
+        "latest-news" : {
            "type" : "content_file",
            "view_file" : "views/cover/latestnews.html",
            "content_file" : "json/content/cover/latestnews.json"
+        },
+        "slider" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/slider.html",
+            "content_file" : "json/content/cover/featured.json"
+        },
+        "content" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/content.html",
+            "content_file" : "json/content/cover/content.json"
         }
 //        ,
-//        "featured-area" : {
-//            "type" : "content_file",
-//            "view_file" : "views/cover/featured-area.html",
-//            "content_file" : "json/cover/featured.json"
-//       },
-//        "popular-news-area" : {
-//            "type" : "content_file",
-//            "view_file" : "views/cover/popular-news-area.html",
-//            "content_file" : "json/cover/popular-news.json"
-//        },
 //       "videos-post-area" : {
 //            "type" : "direct_file",
 //            "view_file" : "views/cover/videos-post-area.html"
