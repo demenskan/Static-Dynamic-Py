@@ -26,7 +26,12 @@
         "slider" : {
             "type" : "content_file",
             "view_file" : "views/cover/slider.html",
-            "content_file" : "json/content/cover/featured.json"
+            "content_file" : "json/content/cover/headlines_A.json"
+        },
+        "latest_postnav" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/slider.html",
+            "content_file" : "json/content/cover/headlines_A.json"
         },
         "content" : {
             "type" : "content_file",
