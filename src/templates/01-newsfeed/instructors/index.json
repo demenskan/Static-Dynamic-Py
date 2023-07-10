@@ -23,21 +23,27 @@
            "view_file" : "views/cover/latestnews.html",
            "content_file" : "json/content/cover/latestnews.json"
         },
+        "social" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/social.html",
+            "content_file" : "json/content/cover/social.json"
+        },
         "slider" : {
             "type" : "content_file",
             "view_file" : "views/cover/slider.html",
-            "content_file" : "json/content/cover/headlines_A.json"
+            "content_file" : "json/content/cover/headlines_a.json"
         },
         "latest_postnav" : {
             "type" : "content_file",
-            "view_file" : "views/cover/slider.html",
-            "content_file" : "json/content/cover/headlines_A.json"
-        },
-        "content" : {
-            "type" : "content_file",
-            "view_file" : "views/cover/content.html",
-            "content_file" : "json/content/cover/content.json"
+            "view_file" : "views/cover/latest_postnav.html",
+            "content_file" : "json/content/cover/headlines_b.json"
         }
+        //,
+//        "content" : {
+//            "type" : "content_file",
+//            "view_file" : "views/cover/content.html",
+//            "content_file" : "json/content/cover/content.json"
+//      }
 //        ,
 //       "videos-post-area" : {
 //            "type" : "direct_file",

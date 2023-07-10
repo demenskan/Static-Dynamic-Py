@@ -2,8 +2,9 @@
     // Config JSON - the main configuration file
     // You shouldn't change a value here unless you know what are you doing
     // NOTE: The folders entries MUST end with a trailing slash
-    // Where to look for the URI's definitions and their parameters
-    "URIS_FILE" : "json/system/uri.json",
+    // ***************************************************************
+    // Where to look for the routes' definitions and their parameters
+    "ROUTES_FILE" : "json/system/routes.json",
     // the instructors files connect all the pieces together, they say
     // which views should use and how to fill them. If you are using multiple templates,
     // you can define this directive as '@@template', which will tie it to the 'instructors' folder that each template has.

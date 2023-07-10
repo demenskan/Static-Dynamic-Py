@@ -1,0 +1,29 @@
+{
+    //the routes file tells the script how to handle the request strings. Each request string will be splitted
+    //in parts according to the slash character (/) giving place to 2 parts named 'selector' & 'arguments'.
+    // the selector part must match with some of the elements within this file. It can have as many 'subfolders'
+    // as you want, but keep in mind that the more levels you use, the slower the script will get.
+    // Each element can have the following properties:
+    //  * instructor  -> (mandatory) tells which instructor file will be used.
+    //  * arguments -> (optional) the extra data that will help the instructor how to behave. Each argument
+    //                 will be separated by a slash. If by chance you may accept slashes inside an argument,
+    //                 try escaping it by using '%2F' entity instead
+    "home" : {
+        "instructor" : "home.json"
+    },
+    "categories" : {
+        "instructor" : "categories.json",
+        "arguments" : {
+            "category_id" : "string"
+        }
+    },
+    "posts" : {
+        "instructor" : "post-list.json"
+    },
+    "categories/post" : {
+        "instructor" : "single-post.json",
+        "arguments" : {
+            "post_id" : "integer"
+        }
+    }
+}
