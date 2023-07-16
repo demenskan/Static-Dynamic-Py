@@ -2,16 +2,16 @@
 // If you need a collection of items, just number them. The script will ignore the numbers
     "headlines" : {
         "0" : {
-            "url" : "/news/landscape",
+            "url" : "/news/city",
             "image" : "static/global/images/slider_img1.jpg",
-            "title" : "See this landscape!",
-            "description" : "The lansdcape is exquisit to the eyes"
+            "title" : "The vibrant city awaits!",
+            "description" : "All the things that you can do on the big apple"
         },
         "1" : {
-            "url" : "/news/vacations",
+            "url" : "/news/station",
             "image" : "static/global/images/slider_img2.jpg",
-            "title" : "Or maybe this one",
-            "description" : "Maybe you like this more"
+            "title" : "Our stations are cleanest of the industry",
+            "description" : "Please keep them that way"
         },
         "2" : {
             "url" : "/news/no_image",
@@ -20,16 +20,16 @@
             "description" : "why is it blank?"
         },
         "3" : {
-            "url" : "news/just-a-copy",
+            "url" : "news/valley",
             "image" : "static/global/images/slider_img3.jpg",
-            "title" : "This is a copy of #0",
-            "description" : ""
+            "title" : "Go visit the valley",
+            "description" : "tours every week"
         },
         "4" : {
-            "url" : "/technology",
+            "url" : "news/beach",
             "image" : "static/global/images/slider_img4.jpg",
-            "title" : "And this of #1",
-            "description" : ""
+            "title" : "The beach with the clearest sky",
+            "description" : "You'll never want to leave!"
         }
     }
 }

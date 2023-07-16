@@ -1,0 +1,33 @@
+{
+    "category_title" : "Sports",
+    "featured_title" : "Weight lifting",
+    "featured_url" : "posts/sports-weight-lifting",
+    "featured_img" : "static/global/images/news-700x435-2.jpg",
+    "featured_description" : "This disciple can make your muscles bigger",
+    "posts" : {
+        "0" : {
+            "url" : "posts/sports-running",
+            "image" : "static/global/images/news-500x280-6.jpg",
+            "alt" : "woman running",
+            "title" : "Running helps your hearth"
+        },
+        "1" : {
+            "url" : "posts/sports-stretching",
+            "image" : "static/global/images/news-100x100-4.jpg",
+            "alt" : "woman stretching",
+            "title" : "Always remember to stretch before"
+        },
+        "2" : {
+            "url" : "posts/sports-fitness",
+            "image" : "static/global/images/news-300x300-3.jpg",
+            "alt" : "fitness",
+            "title" : "Mixing fitness with dance"
+        },
+        "3" : {
+            "url" : "posts/sports-music-on-running",
+            "image" : "static/global/images/news-300x300-1.jpg",
+            "alt" : "",
+            "title" : "the help of music on running"
+        }
+    }
+}

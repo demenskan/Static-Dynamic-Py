@@ -2,34 +2,28 @@
 // If you need a collection of items, just number them. The script will ignore the numbers
     "headlines_b" : {
         "0" : {
-            "url" : "/news/landscape",
-            "image" : "static/global/images/slider_img1.jpg",
-            "title" : "See this landscape!",
-            "description" : "The lansdcape is exquisit to the eyes"
+            "url" : "/news/staff",
+            "image" : "static/global/images/news-80x80-1.jpg",
+            "title" : "Our staff works 24/7 to get you the lowest prices",
+            "description" : ""
         },
         "1" : {
             "url" : "/news/vacations",
-            "image" : "static/global/images/slider_img2.jpg",
-            "title" : "Or maybe this one",
-            "description" : "Maybe you like this more"
+            "image" : "static/global/images/news-80x80-2.jpg",
+            "title" : "Don't worry over bills",
+            "description" : "We're the cheapest on the market"
         },
         "2" : {
-            "url" : "/news/no_image",
-            "image" : "",
-            "title" : "This article has no image",
-            "description" : "why is it blank?"
+            "url" : "/news/vacations",
+            "image" : "static/global/images/news-80x80-3.jpg",
+            "title" : "Don't think and call us!",
+            "description" : "800 123 4567"
         },
         "3" : {
-            "url" : "news/just-a-copy",
-            "image" : "static/global/images/slider_img3.jpg",
-            "title" : "This is a copy of #0",
-            "description" : ""
-        },
-        "4" : {
-            "url" : "/technology",
-            "image" : "static/global/images/slider_img4.jpg",
-            "title" : "And this of #1",
-            "description" : ""
+            "url" : "news/vacations",
+            "image" : "static/global/images/news-80x80-4.jpg",
+            "title" : "Your kids will love it!",
+            "description" : "Please be aware so  they can't steal your credit card"
         }
     }
 }
