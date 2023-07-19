@@ -7,17 +7,12 @@ app = Flask(__name__)
 generator=Generator()
 
 
+#I used two functions because flask needs a trailing slash
+#For root
 @app.route("/")
 def RootRequest():
     return generator.getPage("index.json", {})
-@app.route("/test")
-def Test():
-    config=generator.read_file("json/murakatasssystem/config.json","json","//")
-    if config.split()[0] == "FileNotFoundError:":
-        return ("Config File not found")
-    #return config
-#I used two functions because flask needs a trailing slash
-"""
+#For anything else
 @app.route("/<path:uri_request>")
 def GeneralRequest(uri_request):
     #split the request
@@ -26,12 +21,19 @@ def GeneralRequest(uri_request):
     config=generator.read_file("json/system/config.json","json","//")
     if config == "FileNotFoundError":
         return ("Config File not found")
-    uri_definition=generator.read_file(config["URIS_FILE"],"json","//")
+    uri_definition=generator.read_file(config["ROUTES_FILE"],"json","//")
     #no matches? return 404
     if uri_request[0] not in uri_definition:
         abort(404)
     else:
         return generator.getPage(uri_definition[uri_request[0]]['instructor'],uri_definition[uri_request[0]]['arguments'])
+
+"""
+@app.route("/test")
+def Test():
+    config=generator.read_file("json/murakatasssystem/config.json","json","//")
+    if config.split()[0] == "FileNotFoundError:":
+        return ("Config File not found")
 """
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8000)

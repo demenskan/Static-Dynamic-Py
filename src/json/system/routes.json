@@ -17,13 +17,14 @@
             "category_id" : "string"
         }
     },
-    "posts" : {
+    "posts-by-category" : {
         "instructor" : "post-list.json"
     },
-    "categories/post" : {
+    "posts" : {
         "instructor" : "single-post.json",
         "arguments" : {
-            "post_id" : "integer"
+            "category" : "string",
+            "post_id" : "string"
         }
     }
 }
