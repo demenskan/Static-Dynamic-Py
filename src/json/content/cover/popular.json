@@ -1,0 +1,28 @@
+{
+    "popular" : {
+        "0" : {
+            "title" : "",
+            "image" : "",
+            "alt" : "",
+            "link" : ""
+        },
+        "1" : {
+            "title" : "",
+            "image" : "",
+            "alt" : "",
+            "link" : ""
+        },
+        "2" : {
+            "title" : "",
+            "image" : "",
+            "alt" : "",
+            "link" : ""
+        },
+        "3" : {
+            "title" : "",
+            "image" : "",
+            "alt" : "",
+            "link" : ""
+        }
+    }
+}

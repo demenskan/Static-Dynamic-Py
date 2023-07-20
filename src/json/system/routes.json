@@ -20,11 +20,12 @@
     "posts-by-category" : {
         "instructor" : "post-list.json"
     },
-    "posts" : {
-        "instructor" : "single-post.json",
+    "articles" : {
+        "instructor" : "single-article.json",
         "arguments" : {
-            "category" : "string",
-            "post_id" : "string"
+            "CATEGORY" : "string",
+            "YEAR" : "string",
+            "SLUG" : "string"
         }
     }
 }

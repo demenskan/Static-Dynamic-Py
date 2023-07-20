@@ -1,0 +1,24 @@
+{
+    "tags" : {
+        "0" : {
+            "title" : "sports",
+            "link" : "categories/sports"
+        },
+        "1" : {
+            "title" : "wellness",
+            "link" : "articles/featured/wellness"
+        },
+        "2" : {
+            "title" : "woman",
+            "link" : "articles/featured/woman"
+        }
+    },
+   "related" : {
+       "0" : {
+            "title" : "Is better to weight lift or to swim ?",
+            "link" : "articles/sports/2023/lifting-vs-swimming",
+            "image" : "",
+            "alt" : ""
+       }
+   }
+}

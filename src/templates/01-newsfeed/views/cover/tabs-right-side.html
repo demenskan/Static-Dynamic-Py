@@ -1,0 +1,26 @@
+          <div class="single_sidebar">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#tags" aria-controls="home" role="tab" data-toggle="tab">Tags</a></li>
+              <li role="presentation"><a href="#related" aria-controls="messages" role="tab" data-toggle="tab">Related</a></li>
+            </ul>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="tags">
+                <ul>
+                  {{#tags}}
+                  <li class="cat-item"><a href="{{@tags:link}}">{{@tags:name}}</a></li>
+                  {{/tags}}
+                </ul>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="related">
+                <ul class="spost_nav">
+                  {{#related}}
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="{{@related:link}}" class="media-left"> <img alt="{{@related:alt}}" src="{{@related:image}}"> </a>
+                    <div class="media-body"> <a href="{{@related:link}}" class="catg_title"> {{@related:title}}</a> </div>
+                    </div>
+                  </li>
+                  {{/related}}
+                </ul>
+              </div>
+            </div>
+          </div>

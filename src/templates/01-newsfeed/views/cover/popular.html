@@ -1,0 +1,13 @@
+          <div class="single_sidebar">
+            <h2><span>Popular Articles</span></h2>
+            <ul class="spost_nav">
+              {{#popular}}
+              <li>
+                <div class="media wow fadeInDown">
+                  <a href="{{@popular:link}}" class="media-left"> <img alt="" src="{{@popular:image}}"> </a>
+                  <div class="media-body"> <a href="{{@popular:link}}" class="catg_title"> {{@popular:title}}</a> </div>
+                </div>
+              </li>
+              {{/popular}}
+            </ul>
+          </div>

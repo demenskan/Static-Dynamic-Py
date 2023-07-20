@@ -1,0 +1,49 @@
+{
+    "layout" : "single-article.html",
+    "single_values" : {
+        "page_title" : "Website sample with StatDynPy",
+        "template_path" : "templates/01-newsfeed/"
+    },
+    "sections" : {
+        "css-includes" : {
+            "type" : "direct_file",
+            "view_file" : "views/global/css-includes.html"
+        },
+        "header" : {
+            "type" : "parameted_file",
+            //the views' path must be relative to the designed template's folder
+            "view_file" : "views/global/header.html",
+            "parameters" : {
+                "date" : "<script language=javascript> echo('holis'); </script>"
+            }
+        },
+        "navbar" : {
+            "type" : "content_file",
+            "view_file" : "views/global/navbar.html",
+            "content_file" : "json/content/global/navbar.json"
+        },
+        "article-content" : {
+            "type" : "content_file",
+            "view_file" : "views/articles/single.html",
+            "content_file" : "json/content/articles/{CATEGORY}/{YEAR}/{SLUG}.json"
+        },
+        "popular-articles" : {
+           "type" : "content_file",
+           "view_file" : "views/cover/popular.html",
+           "content_file" : "json/content/cover/popular.json"
+        },
+        "tabs-tags-related" : {
+           "type" : "content_file",
+           "view_file" : "views/articles/tabs-tags-related.html",
+           "content_file" : "json/content/articles/{CATEGORY}/{YEAR}/{SLUG}-tags-related.json"
+        },
+        "js-includes" : {
+            "type" : "direct_file",
+            "view_file" : "views/global/js-includes.html"
+        },
+        "footer" : {
+            "type" : "direct_file",
+            "view_file" : "views/global/footer.html"
+        }
+    }
+}

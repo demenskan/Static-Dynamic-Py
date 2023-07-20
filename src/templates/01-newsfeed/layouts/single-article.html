@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{@page_title}}</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{@css-includes}}
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.min.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+<div class="container">
+  {{@header}}
+  {{@navbar}}
+  <section id="contentSection">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="left_content">
+          {{@article-content}}
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <aside class="right_content">
+          {{@popular-articles}}
+          {{@tabs-tags-related}}
+        </aside>
+      </div>
+    </div>
+  </section>
+  {{@footer}}
+</div>
+{{@js-includes}}
+<script src="static/templates/01-newsfeed/js/date_convertor.js"></script>
+</body>
+</html>

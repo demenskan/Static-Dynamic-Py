@@ -17,16 +17,25 @@ def RootRequest():
 def GeneralRequest(uri_request):
     #split the request
     uri_request=uri_request.split("/")
+    controller = uri_request[0]
     #look on pages definition file for a match
     config=generator.read_file("json/system/config.json","json","//")
     if config == "FileNotFoundError":
         return ("Config File not found")
-    uri_definition=generator.read_file(config["ROUTES_FILE"],"json","//")
+    routes=generator.read_file(config["ROUTES_FILE"],"json","//")
     #no matches? return 404
-    if uri_request[0] not in uri_definition:
+    if controller not in routes:
         abort(404)
     else:
-        return generator.getPage(uri_definition[uri_request[0]]['instructor'],uri_definition[uri_request[0]]['arguments'])
+        if len(routes[controller]['arguments']) != len(uri_request[1:]):
+            return "Wrong number of arguments! (Must be " + str(len(routes[controller]['arguments'])) + ")"
+        else:
+            argindex=1
+            arguments = {}
+            for arg in routes[controller]['arguments']:
+                arguments[arg]=uri_request[argindex]
+                argindex+=1
+            return generator.getPage(routes[controller]['instructor'],arguments)
 
 """
 @app.route("/test")
