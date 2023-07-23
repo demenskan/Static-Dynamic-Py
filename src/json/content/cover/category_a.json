@@ -6,13 +6,13 @@
     "featured_description" : "This disciple can make your muscles bigger",
     "posts" : {
         "0" : {
-            "url" : "posts/sports-running",
+            "url" : "articles/sports/2023/running",
             "image" : "static/global/images/news-500x280-6.jpg",
             "alt" : "woman running",
             "title" : "Running helps your hearth"
         },
         "1" : {
-            "url" : "posts/sports-stretching",
+            "url" : "articles/sports/2023/injuries",
             "image" : "static/global/images/news-100x100-4.jpg",
             "alt" : "woman stretching",
             "title" : "Always remember to stretch before"

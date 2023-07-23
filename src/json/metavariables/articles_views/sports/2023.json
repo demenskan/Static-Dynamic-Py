@@ -1,0 +1,5 @@
+{
+    "weight-lifting" : {
+        "view" : "views/articles/no-pic.html"
+    }
+}

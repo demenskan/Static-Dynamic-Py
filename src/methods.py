@@ -23,7 +23,7 @@ class Generator:
             # substitute all the {{VAR}} chunks
             # using list comprehension + startswith()
             # All occurrences of substring in string
-            instructor_data=self.substitute_variables(instructor_data)
+            instructor_data=self.metavariables(instructor_data, config['METAVARIABLES_FOLDER'])
             instructions=json.loads(instructor_data)
             #load layout
             layout_stream=self.read_file("templates/" + config["CURRENT_TEMPLATE"] +  config["LAYOUTS_FOLDER"] +  instructions['layout'],"text")
@@ -110,7 +110,7 @@ class Generator:
         except FileNotFoundError :
             return "FileNotFoundError: " + filename
 
-    def substitute_variables(self, stream):
+    def metavariables(self, stream, metavariables_path):
         from functools import reduce
         var_positions = [i for i in range(len(stream)) if stream.startswith('{{VAR}}', i)]
         #position=1
@@ -128,7 +128,7 @@ class Generator:
 
         for position in range(len(var_positions)):
             var_elements=variable_content[position].split("|")
-            var_file='json/variables/' + var_elements[0]
+            var_file=metavariables_path + var_elements[0]
             #element=var_elements[1].split(':')
             var_json=self.read_file(var_file,"json","//")
             stream=stream.replace(variable_with_marks[position],reduce(lambda x,y : x[y],var_elements[1].split(":"),var_json))

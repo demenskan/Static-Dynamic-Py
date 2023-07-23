@@ -24,7 +24,7 @@
         },
         "article-content" : {
             "type" : "content_file",
-            "view_file" : "views/articles/single.html",
+            "view_file" : "{{VAR}}articles_views/{CATEGORY}/{YEAR}.json|{SLUG}:view{{/VAR}}",
             "content_file" : "json/content/articles/{CATEGORY}/{YEAR}/{SLUG}.json"
         },
         "popular-articles" : {

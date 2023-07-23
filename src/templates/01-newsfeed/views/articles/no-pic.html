@@ -1,0 +1,25 @@
+              <div class="single_post_content">
+                <h1><span>{{@title}}</span></h1>
+                <p>
+                    {{#elements}}
+                        {{?type=single_paragrap}}
+                        <p>{{@elements:paragraph}}</p>
+                        {{?end}}
+                        {{?type=single_picture}}
+                        <img src="{{@elements:image}}" />
+                        {{?end}}
+                        {{?type=table}}
+                        <table>
+                            {{#elements:table}}
+                            <tr>
+                                <td></td>
+                            </tr>
+                            {{/elements:table}}
+                        </table>
+                        {{?end}}
+                    {{/elements}}
+
+
+                   {{@content}}
+                </p>
+              </div>
