@@ -23,10 +23,10 @@ class Generator:
             # substitute all the {{VAR}} chunks
             # using list comprehension + startswith()
             # All occurrences of substring in string
-            instructor_data=self.metavariables(instructor_data, config['METAVARIABLES_FOLDER'])
+            instructor_data=self.metavariables(instructor_data, config["METAVARIABLES_FOLDER"])
             instructions=json.loads(instructor_data)
             #load layout
-            layout_stream=self.read_file("templates/" + config["CURRENT_TEMPLATE"] +  config["LAYOUTS_FOLDER"] +  instructions['layout'],"text")
+            layout_stream=self.read_file(config["TEMPLATES_FOLDER"] + config["CURRENT_TEMPLATE"] +  config["LAYOUTS_FOLDER"] +  instructions['layout'],"text")
             if str(layout_stream).split()[0] == "FileNotFoundError:":
                 return ("Layout file not found: " + str(layout_stream).split()[1])
             for key in instructions['single_values']:
@@ -64,8 +64,8 @@ class Generator:
                                 if len(content_json[element]) > 0:
                                     for subelement in content_json[element]:
                                         #subtemplate_out+= str(content_json[element][subelement]['author_name'])
-                                        if "@subtemplate" in content_json[element][subelement]:
-                                            partial=self.read_file(content_json[element][subelement]['@subtemplate'],"text")
+                                        if "@subview" in content_json[element][subelement]:
+                                            partial=self.read_file(config['TEMPLATES_FOLDER']+config['CURRENT_TEMPLATE']+content_json[element][subelement]['@subview'],"text")
                                         else:
                                             partial=populated_subtemplate_content
                                         for subattrib in content_json[element][subelement]:
@@ -81,13 +81,13 @@ class Generator:
                                 subtemplate = '' # apply your error handling
                     layout_stream=layout_stream.replace("{{@" + key + "}}",view_stream)
                 elif instructions['sections'][key]['type'] == "parameted_file":
-                    view_stream=self.read_file("templates/" + config["CURRENT_TEMPLATE"] + instructions['sections'][key]['view_file'],"text")
+                    view_stream=self.read_file(config["TEMPLATES_FOLDER"] + config["CURRENT_TEMPLATE"] + instructions['sections'][key]['view_file'],"text")
                     for element in instructions['sections'][key]['parameters']:
                         view_stream=view_stream.replace("{{@" + element + "}}", str(instructions['sections'][key]['parameters'][element]))
                     layout_stream=layout_stream.replace("{{@" + key + "}}",view_stream)
                 else:
                     #Direct file
-                    view_stream=self.read_file("templates/" + config["CURRENT_TEMPLATE"] + instructions['sections'][key]['view_file'],"text")
+                    view_stream=self.read_file(config["TEMPLATES_FOLDER"] + config["CURRENT_TEMPLATE"] + instructions['sections'][key]['view_file'],"text")
                     layout_stream=layout_stream.replace("{{@" + key + "}}",view_stream)
             return layout_stream
             #return a
