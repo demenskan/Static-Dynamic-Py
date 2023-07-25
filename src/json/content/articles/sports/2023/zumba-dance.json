@@ -1,0 +1,32 @@
+{
+    // single post example
+    // content/sports/2023/zumba-dance
+    "featured_img" : "/static/global/images/news-300x300-3.jpg",
+    "featured_caption" : "Have fun while excercise",
+    "title" : "Zumba dance",
+    "subtitle" : "More and more people practice this",
+    "elements" : {
+        "0" : {
+            "paragraph" : "Zumba is a fitness program that involves cardio and Latin-inspired dance. It was founded by Colombian dancer and choreographer Beto Pérez in 2001,[1] It currently has 200,000 locations, with 15 million people taking classes weekly, and is located in 180 countries.[2] [3]Zumba is a trademark owned by Zumba Fitness, LLC.  "
+        },
+        "1" : {
+            // the subviews path its also relative to the active template's root path
+            "@subview" : "subviews/articles/paragraph-subtitle.html",
+            "subtitle" : "Origin",
+            "paragraph" : "Zumba was created in the 1990s by dancer and choreographer Beto Pérez, an aerobics instructor in Cali, Colombia. After forgetting his usual music one day, and using cassette tapes of Latin dance music (salsa and merengue) for class, Pérez began integrating the music and dancing into other classes, calling it \"Rumbacize\".[4][5]"
+        },
+        "2" : {
+            "@subview" : "subviews/articles/paragraph-img-left.html",
+            "image" : "/static/global/images/news-100x100-4.jpg",
+            "paragraph" : "In 2001, Pérez partnered with Alberto Perlman and Alberto Aghion to launch Zumba, and the trio released a series of fitness videos sold via infomercial.[6] Pérez decided on the word \"Zumba\" because of its similarity to the word \"rumba\", the Cuban musical genre. Pérez and his partner began to replace the first letter of \"rumba\" until they landed on \"sumba\", and Pérez ultimately decided to spell it with the letter 'z' because he liked the fictional character Zorro when he was a child.[7]"
+        },
+        "3" : {
+            "paragraph" : "n 2012, Insight Venture Partners and the Raine Group invested in the venture.[8][9] The company expanded into class instruction, and by 2015, according to Perlman, there were 14 million Zumba students in 186 countries.[10]"
+        },
+        "4" : {
+            "@subview" : "subviews/articles/paragraph-subtitle.html",
+            "subtitle" : "Choreography",
+            "paragraph" : "Zumba choreography is composed using all or some of sixteen core steps. There are four basic rhythms: salsa, reggaeton, merengue, and cumbia;[11] each basic rhythm has four core steps.[12]"
+        }
+    }
+}

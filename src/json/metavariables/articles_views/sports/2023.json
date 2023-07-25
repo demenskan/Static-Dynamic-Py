@@ -2,6 +2,12 @@
     "weight-lifting" : {
         "view" : "views/articles/feature-pic.html"
     },
+    "injuries" : {
+        "view" : "views/articles/feature-pic.html"
+    },
+    "zumba-dance" : {
+        "view" : "views/articles/feature-pic.html"
+    },
     "running" : {
         "view" : "views/articles/feature-pic.html"
     }

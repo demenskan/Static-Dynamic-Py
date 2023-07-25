@@ -18,10 +18,10 @@
             "title" : "Always remember to stretch before"
         },
         "2" : {
-            "url" : "posts/sports-fitness",
+            "url" : "articles/sports/2023/zumba-dance",
             "image" : "static/global/images/news-300x300-3.jpg",
             "alt" : "fitness",
-            "title" : "Mixing fitness with dance"
+            "title" : "Zumba dance"
         },
         "3" : {
             "url" : "posts/sports-music-on-running",
