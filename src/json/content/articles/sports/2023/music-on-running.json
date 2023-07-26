@@ -1,0 +1,26 @@
+{
+    // single post example
+    // content/articles/sports/2023/music-on-running
+    "title" : "Music on running",
+    "subtitle" : "How to listen",
+    "featured_img" : "/static/global/images/news-300x300-1.jpg",
+    "featured_caption" : "credits: https://www.runandbecome.com/running-product-advice/listen-to-music-while-running",
+    "elements" :  {
+        "0" : {
+            "paragraph" : "Music. It has constantly been around us and can contribute so much to how we feel daily; it can really boost your motivation to get through errands, set the mood while preparing your dinner or just some background sound for your ‘me time’. But running with music has been an idea that works for some and not for all."
+        },
+        "1" : {
+            "paragraph" : "Is it safe? Does it improve your running? What type of music should you listen to? Discover the reasons as to why running with music can be a good idea for those who struggle to stay consistent and strong during their runs, as well as the risks of running outdoors with headphones."
+        },
+        "2" : {
+            "@subview" : "subviews/articles/paragraph-subtitle.html",
+            "subtitle" : "Benefits of running with music",
+            "paragraph" : "<ul><li>It can provide a source of motivation.</li><li>A certain song can make you feel good and give you that extra push in the final mile!</li><li>    Running for a long time with music can help pass time and allow you to stay in the zone. </li><li>    Your breathing pace can improve, when you’re listening to a particular beat or melody. </li><li>    Many studies confirm that the use of music during aerobic events can have positive effects on exercise, enhancing performance, such as faster running speeds and reduced blood lactate levels. But it has no effect on pacing strategy. Simply put, it influences exercise intensity and rating of perceived effort. This explains why we can achieve greater energy efficiency while exercising with music – running duration, breathing frequency and faster heart-rate recovery. </li></ul>"
+        },
+        "3" : {
+            "@subview" : "subviews/articles/paragraph-subtitle.html",
+            "subtitle" : "Is it safe to run while listening to music?",
+            "paragraph" : "It is a great feeling achieving a running session with the partial aid of some sound in your ears. However, there are a few risks when running with headphones outdoors; for example, if you’re tunnel visioned while jogging across a quiet area, it will be very difficult to hear any oncoming motor vehicles – which can be catastrophic. More potential dangers include running with music in badly-lit or isolated areas by yourself."
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "category_title" : "People",
+    "featured_title" : "Josh Bytes: go*gling for living",
+    "featured_url" : "articles/people/2023/josh-bytes",
+    "featured_img" : "static/global/images/news-300x300-4.jpg",
+    "featured_description" : "This fake person is incredible",
+    "posts" : {
+        "0" : {
+            "url" : "articles/people/2023/mrs-cotton",
+            "image" : "static/global/images/pexels-cottonbro-studio-4057758.jpg",
+            "alt" : "Mrs. cotton",
+            "title" : "Interview with Mrs. Cotton"
+        },
+        "1" : {
+            "url" : "articles/people/2023/mr-adams",
+            "image" : "static/global/images/pexels-pixabay-39866.jpg",
+            "alt" : "Mr. Adams",
+            "title" : "Mr. Adams always study"
+        },
+        "2" : {
+            "url" : "articles/people/2023/trinity",
+            "image" : "static/global/images/pexels-trinity-kubassek-445109.jpg",
+            "alt" : "",
+            "title" : "Trinity Kubassek having fun"
+        },
+        "3" : {
+            "url" : "articles/people/2023/kaique",
+            "image" : "static/global/images/pexels-kaique-rocha-307847.jpg",
+            "alt" : "",
+            "title" : "Kaique's first visit to NYC"
+        }
+    }
+}

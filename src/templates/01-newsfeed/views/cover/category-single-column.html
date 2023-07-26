@@ -1,0 +1,21 @@
+              <div class="single_post_content">
+                <h2><span>{{@category_title}}</span></h2>
+                <ul class="business_catgnav wow fadeInDown">
+                  <li>
+                    <figure class="bsbig_fig"> <a href="{{@featured_url}}" class="featured_img"> <img alt="{{@featured_alt}}" src="{{@featured_img}}"> <span class="overlay"></span> </a>
+                      <figcaption> <a href="{{@featured_url}}">{{@featured_title}}</a> </figcaption>
+                      <p>{{@featured_description}}</p>
+                    </figure>
+                  </li>
+                </ul>
+                <ul class="spost_nav">
+                  {{#posts}}
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="{{@posts:url}}" class="media-left"> <img alt="{{@posts:alt}}" src="{{@posts:image}}"> </a>
+                        <div class="media-body"> <a href="{{@posts:url}}" class="catg_title"> {{@posts:title}}</a> </div>
+                    </div>
+                  </li>
+                  {{/posts}}
+                </ul>
+              </div>
+

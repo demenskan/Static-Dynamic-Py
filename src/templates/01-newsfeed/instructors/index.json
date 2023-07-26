@@ -40,18 +40,23 @@
         },
         "category_A" : {
             "type" : "content_file",
-            "view_file" : "views/cover/category_a.html",
+            "view_file" : "views/cover/category-double-column.html",
             "content_file" : "json/content/cover/category_a.json"
+        },
+        "category_B" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/category-single-column.html",
+            "content_file" : "json/content/cover/category_b.json"
+        },
+        "category_C" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/category-single-column.html",
+            "content_file" : "json/content/cover/category_c.json"
         }
 //        ,
 //       "videos-post-area" : {
 //            "type" : "direct_file",
 //            "view_file" : "views/cover/videos-post-area.html"
-//        },
-//        "editors-pick-post-area" : {
-//            "type" : "content_file",
-//            "content_file" : "json/cover/editors-pick-post-area.json",
-//            "view_file" : "views/cover/editors-pick-post-area.html"
 //        },
 //        "footer-add-area" : {
 //            "type" : "direct_file",
