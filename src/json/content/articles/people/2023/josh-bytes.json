@@ -1,0 +1,37 @@
+{
+    // single post example
+    // content/articles/sports/2023/injuries
+    "title" : "Josh Bytes: go*gling for living",
+    "subtitle" : "fake person's profile",
+    "featured_img" : "/static/global/images/news-300x300-4.jpg",
+    "featured_caption" : "Searching stuff on internet for a living?",
+    "elements" :  {
+        "0" : {
+            "paragraph" : "\"Search and send\" - That's my motto"
+        },
+        "1" : {
+            "paragraph" : "Josh accord to do this and maybe he'll do it forever. \"There's a ton of bucks on that\""
+        },
+        "2" : {
+            "paragraph" : "Here is a table chart of incomes that you may earn  "
+        },
+        "3" : {
+            "@subview" : "subviews/articles/table-earnings.html",
+            "title" : "Dollars / month",
+            "rows" : {
+                "0" : {
+                    "position" : "Researcher A",
+                    "earnings" : "10k"
+                },
+                "1" : {
+                    "position" : "Researcher B",
+                    "earnings" : "22k"
+                },
+                "2" : {
+                    "position" : "Researcher C",
+                    "earnings" : "35k"
+                }
+            }
+        }
+    }
+}

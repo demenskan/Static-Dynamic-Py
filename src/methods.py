@@ -1,6 +1,7 @@
 import json
 import traceback
 import os
+import sys
 from dotenv import load_dotenv
 class Generator:
     def getPage(self, instructor, params):
@@ -63,22 +64,46 @@ class Generator:
                                 subtemplate_out=''
                                 if len(content_json[element]) > 0:
                                     for subelement in content_json[element]:
-                                        #subtemplate_out+= str(content_json[element][subelement]['author_name'])
                                         if "@subview" in content_json[element][subelement]:
                                             partial=self.read_file(config['TEMPLATES_FOLDER']+config['CURRENT_TEMPLATE']+content_json[element][subelement]['@subview'],"text")
                                         else:
                                             partial=populated_subtemplate_content
                                         for subattrib in content_json[element][subelement]:
-                                            partial=partial.replace('{{@'+element+':'+subattrib+'}}',content_json[element][subelement][subattrib])
+                                            currentsubattrib=subattrib
+                                            typecurrentsubattrib=str(type(subattrib))
+                                            if (type(content_json[element][subelement][subattrib]) is str):
+                                                partial=partial.replace('{{@'+element+':'+subattrib+'}}',content_json[element][subelement][subattrib])
+                                            elif (type(content_json[element][subelement][subattrib]) is dict):
+                                                sm1_1=partial.find('{{#'+ subattrib + '}}')
+                                                sm1_2=partial.find('{{#'+ subattrib + '}}') + len('{{#'+ subattrib + '}}')
+                                                sm2_1=partial.find('{{/'+ subattrib + '}}')
+                                                sm2_2=partial.find('{{/'+ subattrib + '}}') + len('{{/'+ subattrib + '}}')
+                                                subtemplate_with_marks = partial[sm1_1:sm2_2]
+                                                subtemplate_content= partial[sm1_2:sm2_1]
+                                                subpartial_out=''
+                                                if len(content_json[element][subelement][subattrib]) > 0:
+                                                    for microelement in content_json[element][subelement][subattrib]:
+                                                        subpartial=subtemplate_content
+                                                        for microattrib in content_json[element][subelement][subattrib][microelement]:
+                                                            subpartial=subpartial.replace('{{@' + subattrib + ':' + microattrib + '}}',
+                                                                content_json[element][subelement][subattrib][microelement][microattrib])
+                                                        subpartial_out+=subpartial
+                                                partial=partial.replace(subtemplate_with_marks,subpartial_out)
                                         subtemplate_out+=partial
                                     view_stream=view_stream.replace(populated_subtemplate_with_marks,subtemplate_out)
                                     view_stream=view_stream.replace(empty_subtemplate_with_marks,'')
                                 else:
                                     view_stream=view_stream.replace(populated_subtemplate_with_marks,'')
                                     view_stream=view_stream.replace(empty_subtemplate_with_marks,empty_subtemplate_content)
-                            except Error:
+                            except Exception as e:
                                 # not found in the original string
-                                subtemplate = '' # apply your error handling
+                                # apply your error handling
+                                exception_type, exception_object, exception_traceback = sys.exc_info()
+                                filename = exception_traceback.tb_frame.f_code.co_filename
+                                line_number = exception_traceback.tb_lineno
+                                view_stream=view_stream.replace(populated_subtemplate_with_marks,
+                                        'Exception error at ' + currentsubattrib + '('+ typecurrentsubattrib +'):' + repr(e) + \
+                                        'line: ' + str(line_number))
                     layout_stream=layout_stream.replace("{{@" + key + "}}",view_stream)
                 elif instructions['sections'][key]['type'] == "parameted_file":
                     view_stream=self.read_file(config["TEMPLATES_FOLDER"] + config["CURRENT_TEMPLATE"] + instructions['sections'][key]['view_file'],"text")
