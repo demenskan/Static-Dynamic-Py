@@ -1,0 +1,15 @@
+            <h2><span>{{@section_title}}</span></h2>
+            <ul class="photograph_nav  wow fadeInDown">
+              {{#photos}}
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla">
+                     <a class="fancybox-buttons" data-fancybox-group="button" href="{{@photos:image}}" title="{{@photos:title}}"> 
+                         <img src="{{@photos:image}}" alt="{{@photos:alt}}"/>
+                     </a>
+                  </figure>
+                </div>
+              </li>
+              {{/photos}}
+            </ul>
+

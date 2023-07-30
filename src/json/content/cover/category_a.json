@@ -6,25 +6,25 @@
     "featured_description" : "This disciple can make your muscles bigger",
     "posts" : {
         "0" : {
-            "url" : "articles/sports/2023/running",
+            "url" : "/articles/sports/2023/running",
             "image" : "static/global/images/news-500x280-6.jpg",
             "alt" : "woman running",
             "title" : "Running helps your hearth"
         },
         "1" : {
-            "url" : "articles/sports/2023/injuries",
+            "url" : "/articles/sports/2023/injuries",
             "image" : "static/global/images/news-100x100-4.jpg",
             "alt" : "woman stretching",
             "title" : "Always remember to stretch before"
         },
         "2" : {
-            "url" : "articles/sports/2023/zumba-dance",
+            "url" : "/articles/sports/2023/zumba-dance",
             "image" : "static/global/images/news-300x300-3.jpg",
             "alt" : "fitness",
             "title" : "Zumba dance"
         },
         "3" : {
-            "url" : "articles/sports/2023/music-on-running",
+            "url" : "/articles/sports/2023/music-on-running",
             "image" : "static/global/images/news-300x300-1.jpg",
             "alt" : "",
             "title" : "the help of music on running"

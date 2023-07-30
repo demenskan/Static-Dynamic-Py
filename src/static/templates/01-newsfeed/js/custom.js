@@ -52,6 +52,14 @@ jQuery(document).ready(function() {
     });
     $('.tootlip').tooltip();
     $("ul#ticker01").liScroll();
+    $("#current-date").html(function () {
+        const current_date = new Date();
+        date= current_date.getDate();
+        day = current_date.getDay();
+        month=current_date.getMonth();
+        year= current_date.getFullYear();
+        return day + ', ' + date + ' ' + month + ' ' + year;
+    });
 });
 
 wow = new WOW({

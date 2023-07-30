@@ -2,34 +2,34 @@
 // If you need a collection of items, just number them. The script will ignore the numbers
     "headlines" : {
         "0" : {
-            "url" : "/news/city",
+            "url" : "articles/travel/2023/city",
             "image" : "static/global/images/slider_img1.jpg",
-            "title" : "The vibrant city awaits!",
-            "description" : "All the things that you can do on the big apple"
+            "title" : "The vibrant city!",
+            "description" : "Single article with picture"
         },
         "1" : {
-            "url" : "/news/station",
+            "url" : "articles/travel/2023/station",
             "image" : "static/global/images/slider_img2.jpg",
-            "title" : "Our stations are cleanest of the industry",
-            "description" : "Please keep them that way"
+            "title" : "Train station gallery",
+            "description" : "Single article with gallery"
         },
         "2" : {
-            "url" : "/news/no_image",
+            "url" : "articles/travel/2023/no-image",
             "image" : "",
-            "title" : "This article has no image",
-            "description" : "why is it blank?"
+            "title" : "This article has no featured picture",
+            "description" : "Single article without featured picture"
         },
         "3" : {
-            "url" : "news/valley",
+            "url" : "articles/travel/2023/valley",
             "image" : "static/global/images/slider_img3.jpg",
-            "title" : "Go visit the valley",
-            "description" : "tours every week"
+            "title" : "Valley",
+            "description" : "Single article with picture"
         },
         "4" : {
-            "url" : "news/beach",
+            "url" : "articles/travel/2023/beach",
             "image" : "static/global/images/slider_img4.jpg",
-            "title" : "The beach with the clearest sky",
-            "description" : "You'll never want to leave!"
+            "title" : "The beach",
+            "description" : "Single article with picture"
         }
     }
 }

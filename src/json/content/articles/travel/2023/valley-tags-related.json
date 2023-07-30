@@ -1,0 +1,38 @@
+{
+    "tags" : {
+        "0" : {
+            "title" : "Travel",
+            "link" : "categories/travel"
+        },
+        "1" : {
+            "title" : "People",
+            "link" : "categories/people"
+        }
+    },
+   "related" : {
+       "0" : {
+            "title" : "City",
+            "link" : "/articles/travel/2023/city",
+            "image" : "/static/global/images/slider_img1.jpg",
+            "alt" : ""
+       },
+       "1" : {
+            "title" : "No Pic",
+            "link" : "/articles/travel/2023/no-image",
+            "image" : "",
+            "alt" : ""
+       },
+       "2" : {
+            "title" : "Station gallery",
+            "link" : "/articles/travel/2023/station",
+            "image" : "/static/global/images/slider_img2.jpg",
+            "alt" : ""
+       },
+       "3" : {
+            "title" : "Beach",
+            "link" : "/articles/travel/2023/beach",
+            "image" : "/static/global/images/slider_img4.jpg",
+            "alt" : ""
+       }
+   }
+}

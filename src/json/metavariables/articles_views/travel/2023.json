@@ -1,0 +1,17 @@
+{
+    "city" : {
+        "view" : "views/articles/feature-pic.html"
+    },
+    "valley" : {
+        "view" : "views/articles/feature-pic.html"
+    },
+    "no-image" : {
+        "view" : "views/articles/no-pic.html"
+    },
+    "station" : {
+        "view" : "views/articles/gallery.html"
+    },
+    "beach" : {
+        "view" : "views/articles/feature-pic.html"
+    }
+}

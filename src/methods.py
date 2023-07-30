@@ -25,7 +25,10 @@ class Generator:
             # using list comprehension + startswith()
             # All occurrences of substring in string
             instructor_data=self.metavariables(instructor_data, config["METAVARIABLES_FOLDER"])
-            instructions=json.loads(instructor_data)
+            try:
+                instructions=json.loads(instructor_data)
+            except ValueError as err:
+                return "[metavariables] " + instructor_data
             #load layout
             layout_stream=self.read_file(config["TEMPLATES_FOLDER"] + config["CURRENT_TEMPLATE"] +  config["LAYOUTS_FOLDER"] +  instructions['layout'],"text")
             if str(layout_stream).split()[0] == "FileNotFoundError:":
@@ -137,26 +140,36 @@ class Generator:
 
     def metavariables(self, stream, metavariables_path):
         from functools import reduce
-        var_positions = [i for i in range(len(stream)) if stream.startswith('{{VAR}}', i)]
-        #position=1
-        #for position in range(2):
-        #return stream
-        variable_with_marks=[]
-        variable_content=[]
-        for position in range(len(var_positions)):
-            vm1_1=stream.find('{{VAR}}',var_positions[position])
-            vm1_2=vm1_1 + 7
-            vm2_1=stream.find('{{/VAR}}',var_positions[position])
-            vm2_2=vm2_1 + 8
-            variable_with_marks.append(stream[vm1_1:vm2_2])
-            variable_content.append(stream[vm1_2:vm2_1])
+        try:
+            var_positions = [i for i in range(len(stream)) if stream.startswith('{{VAR}}', i)]
+            #position=1
+            #for position in range(2):
+            #return stream
+            variable_with_marks=[]
+            variable_content=[]
+            for position in range(len(var_positions)):
+                vm1_1=stream.find('{{VAR}}',var_positions[position])
+                vm1_2=vm1_1 + 7
+                vm2_1=stream.find('{{/VAR}}',var_positions[position])
+                vm2_2=vm2_1 + 8
+                variable_with_marks.append(stream[vm1_1:vm2_2])
+                variable_content.append(stream[vm1_2:vm2_1])
 
-        for position in range(len(var_positions)):
-            var_elements=variable_content[position].split("|")
-            var_file=metavariables_path + var_elements[0]
-            #element=var_elements[1].split(':')
-            var_json=self.read_file(var_file,"json","//")
-            stream=stream.replace(variable_with_marks[position],reduce(lambda x,y : x[y],var_elements[1].split(":"),var_json))
-            #stream=stream.replace(variable_with_marks[position],var_json[var_elements[1]])
+            for position in range(len(var_positions)):
+                var_elements=variable_content[position].split("|")
+                var_file=metavariables_path + var_elements[0]
+                #element=var_elements[1].split(':')
+                var_json=self.read_file(var_file,"json","//")
+                if str(var_json).split()[0] == "FileNotFoundError:":
+                    return ("Metavariable file not found: " + str(var_json).split()[1])
+                stream=stream.replace(variable_with_marks[position],reduce(lambda x,y : x[y],var_elements[1].split(":"),var_json))
+                #stream=stream.replace(variable_with_marks[position],var_json[var_elements[1]])
+        except Exception as e:
+            # not found in the original string
+            # apply your error handling
+            exception_type, exception_object, exception_traceback = sys.exc_info()
+            filename = exception_traceback.tb_frame.f_code.co_filename
+            line_number = exception_traceback.tb_lineno
+            stream= 'Exception :' + repr(e)
         return stream
 

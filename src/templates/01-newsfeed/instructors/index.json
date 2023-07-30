@@ -52,12 +52,13 @@
             "type" : "content_file",
             "view_file" : "views/cover/category-single-column.html",
             "content_file" : "json/content/cover/category_c.json"
+        },
+        "gallery" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/gallery.html",
+            "content_file" : "json/content/cover/gallery.json"
         }
 //        ,
-//       "videos-post-area" : {
-//            "type" : "direct_file",
-//            "view_file" : "views/cover/videos-post-area.html"
-//        },
 //        "footer-add-area" : {
 //            "type" : "direct_file",
 //            "view_file" : "views/cover/footer-add-area.html"
