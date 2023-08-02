@@ -2,16 +2,16 @@
     "josh-bytes" : {
         "view" : "views/articles/feature-pic.html"
     },
-    "injuries" : {
+    "mrs-cotton" : {
         "view" : "views/articles/feature-pic.html"
     },
-    "zumba-dance" : {
+    "mr-adams" : {
         "view" : "views/articles/feature-pic.html"
     },
-    "music-on-running" : {
+    "trinity" : {
         "view" : "views/articles/feature-pic.html"
     },
-    "running" : {
+    "kaique" : {
         "view" : "views/articles/feature-pic.html"
     }
 }

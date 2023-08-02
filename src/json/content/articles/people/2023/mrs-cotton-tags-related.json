@@ -1,0 +1,32 @@
+{
+    "tags" : {
+        "0" : {
+            "title" : "People",
+            "link" : "categories/people"
+        },
+        "1" : {
+            "title" : "Business",
+            "link" : "categories/business"
+        }
+    },
+   "related" : {
+       "0" : {
+            "title" : "Josh Bytes: go*gling for living",
+            "link" : "/articles/people/2023/josh-bytes",
+            "image" : "/static/global/images/news-300x300-4.jpg",
+            "alt" : ""
+       },
+       "1" : {
+            "title" : "Mister Adams always study",
+            "link" : "/articles/people/2023/mr-adams",
+            "image" : "/static/global/images/pexels-pixabay-39866.jpg",
+            "alt" : ""
+       },
+       "2" : {
+            "title" : "Trinity having fun",
+            "link" : "/articles/people/2023/trinity",
+            "image" : "/static/global/images/pexels-trinity-kubassek-445109.jpg",
+            "alt" : ""
+       }
+   }
+}

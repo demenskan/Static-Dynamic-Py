@@ -1,0 +1,17 @@
+{
+    "kids-fashion" : {
+        "view" : "views/articles/no-pic.html"
+    },
+    "kids-games" : {
+        "view" : "views/articles/gallery.html"
+    },
+    "kittens" : {
+        "view" : "views/articles/feature-pic.html"
+    },
+    "lawyer" : {
+        "view" : "views/articles/feature-pic.html"
+    },
+    "pink-alert" : {
+        "view" : "views/articles/feature-pic.html"
+    }
+}

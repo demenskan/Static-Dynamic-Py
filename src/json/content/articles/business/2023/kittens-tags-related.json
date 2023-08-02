@@ -1,0 +1,38 @@
+{
+    "tags" : {
+        "0" : {
+            "title" : "Travel",
+            "link" : "categories/travel"
+        },
+        "1" : {
+            "title" : "Business",
+            "link" : "categories/business"
+        }
+    },
+   "related" : {
+       "0" : {
+            "title" : "Kids fashion last years",
+            "link" : "/articles/business/2023/kids-fashion",
+            "image" : "/static/global/images/news-500x280-3.jpg",
+            "alt" : ""
+       },
+       "1" : {
+            "title" : "Helping people thru law",
+            "link" : "/articles/business/2023/lawyer",
+            "image" : "/static/global/images/news-450x350-1.jpg",
+            "alt" : ""
+       },
+       "2" : {
+            "title" : "Komputaa: the trending game",
+            "link" : "/articles/business/2023/kids-games",
+            "image" : "/static/global/images/news-350x223-3.jpg",
+            "alt" : ""
+       },
+       "3" : {
+            "title" : "Pink alert",
+            "link" : "/articles/business/2023/pink-alert",
+            "image" : "/static/global/images/news-350x223-1.jpg",
+            "alt" : ""
+       }
+   }
+}

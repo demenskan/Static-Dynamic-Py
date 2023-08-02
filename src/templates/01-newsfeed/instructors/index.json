@@ -57,12 +57,13 @@
             "type" : "content_file",
             "view_file" : "views/cover/gallery.html",
             "content_file" : "json/content/cover/gallery.json"
+        },
+        "category_D" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/category-double-column.html",
+            "content_file" : "json/content/cover/category_d.json"
         }
-//        ,
-//        "footer-add-area" : {
-//            "type" : "direct_file",
-//            "view_file" : "views/cover/footer-add-area.html"
-//        },
+//      ,
 //        "footer" : {
 //           "type" : "direct_file",
 //            "view_file" : "views/main/footer.html"
