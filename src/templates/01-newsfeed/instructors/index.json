@@ -62,6 +62,11 @@
             "type" : "content_file",
             "view_file" : "views/cover/category-double-column.html",
             "content_file" : "json/content/cover/category_d.json"
+        },
+        "popular_posts" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/popular.html",
+            "content_file" : "json/content/cover/popular.json"
         }
 //      ,
 //        "footer" : {
