@@ -2,11 +2,11 @@
     "tags" : {
         "0" : {
             "title" : "Travel",
-            "link" : "categories/travel"
+            "link" : "/categories/travel"
         },
         "1" : {
             "title" : "People",
-            "link" : "categories/people"
+            "link" : "/categories/people"
         }
     },
    "related" : {

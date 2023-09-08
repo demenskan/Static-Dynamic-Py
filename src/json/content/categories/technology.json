@@ -1,0 +1,35 @@
+{
+    "category_title" : "Technology",
+    "posts" : {
+        "0" : {
+            "url" : "/articles/technology/2023/abet-music",
+            "image" : "/static/global/images/pexels-abet-llacer-919734.jpg",
+            "alt" : "Abet music",
+            "title" : "Look for your sound with AbetMusic"
+        },
+        "1" : {
+            "url" : "/articles/technology/2023/pixabay-telescope",
+            "image" : "/static/global/images/pexels-pixabay-256381.jpg",
+            "alt" : "Pixabay's telescope",
+            "title" : "Pixabay presents their new telescope model"
+        },
+        "2" : {
+            "url" : "/articles/technology/2023/markus-editor",
+            "image" : "/static/global/images/pexels-markus-spiske-177598.jpg",
+            "alt" : "",
+            "title" : "Do more with Markus' editor"
+        },
+        "3" : {
+            "title" : "The perfect home setup",
+            "url" : "/articles/technology/2023/perfect-home-setup",
+            "image" : "/static/global/images/pexels-pixabay-356056.jpg",
+            "alt" : ""
+        },
+        "4" : {
+            "url" : "/articles/technology/2023/share-info",
+            "image" : "/static/global/images/news-300x300-5.jpg",
+            "alt" : "",
+            "title" : "Share info nearby with your smartphone"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+          <div class="single_sidebar">
+            <h2><span>{{@category_title}}</span></h2>
+            <ul class="spost_nav">
+              {{#posts}}
+              <li>
+                <div class="media wow fadeInDown">
+                  <a href="{{@posts:url}}" class="media-left"> <img alt="" src="{{@posts:image}}"> </a>
+                  <div class="media-body"> <a href="{{@posts:url}}" class="catg_title"> {{@posts:title}}</a> </div>
+                </div>
+              </li>
+              {{/posts}}
+            </ul>
+          </div>

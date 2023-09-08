@@ -1,0 +1,17 @@
+{
+    "abet-music" : {
+        "view" : "views/articles/no-pic.html"
+    },
+    "pixabay-telescope" : {
+        "view" : "views/articles/gallery.html"
+    },
+    "markus-editor" : {
+        "view" : "views/articles/feature-pic.html"
+    },
+    "perfect-home-setup" : {
+        "view" : "views/articles/feature-pic.html"
+    },
+    "share-info" : {
+        "view" : "views/articles/feature-pic.html"
+    }
+}

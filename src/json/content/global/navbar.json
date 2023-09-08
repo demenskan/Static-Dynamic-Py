@@ -1,24 +1,20 @@
 {
     "menu_options" : {
         "0" : {
-            "url" : "/technology",
+            "url" : "/categories/technology",
             "caption" : "Technology"
         },
         "1" : {
-            "url" : "/arts",
-            "caption" : "Arts"
+            "url" : "/categories/people",
+            "caption" : "People"
         },
         "2" : {
-            "url" : "/entertaiment",
-            "caption" : "Entertainment"
+            "url" : "/categories/sports",
+            "caption" : "Sports"
         },
         "3" : {
-            "url" : "/culture",
-            "caption" : "Culture"
-        },
-        "4" : {
-            "url" : "/science",
-            "caption" : "Science"
+            "url" : "/categories/business",
+            "caption" : "Business"
         }
     }
 }

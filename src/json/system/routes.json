@@ -14,7 +14,7 @@
     "categories" : {
         "instructor" : "categories.json",
         "arguments" : {
-            "category_id" : "string"
+            "category_name" : "string"
         }
     },
     "posts-by-category" : {

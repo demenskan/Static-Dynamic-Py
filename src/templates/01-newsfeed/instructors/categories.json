@@ -1,7 +1,7 @@
 {
-    "layout" : "single-article.html",
+    "layout" : "categories.html",
     "single_values" : {
-        "page_title" : "Website sample with StatDynPy",
+        "page_title" : "Articles by category",
         "template_path" : "templates/01-newsfeed/"
     },
     "sections" : {
@@ -22,20 +22,10 @@
             "view_file" : "views/global/navbar.html",
             "content_file" : "json/content/global/navbar.json"
         },
-        "article-content" : {
+        "categories-content" : {
             "type" : "content_file",
-            "view_file" : "{{VAR}}articles_views/{CATEGORY}/{YEAR}.json|{SLUG}:view{{/VAR}}",
-            "content_file" : "json/content/articles/{CATEGORY}/{YEAR}/{SLUG}.json"
-        },
-        "popular-articles" : {
-           "type" : "content_file",
-           "view_file" : "views/cover/popular.html",
-           "content_file" : "json/content/cover/popular.json"
-        },
-        "tabs-tags-related" : {
-           "type" : "content_file",
-           "view_file" : "views/articles/tabs-tags-related.html",
-           "content_file" : "json/content/articles/{CATEGORY}/{YEAR}/{SLUG}-tags-related.json"
+            "view_file" : "views/categories/content.html",
+            "content_file" : "json/content/categories/{category_name}.json"
         },
         "js-includes" : {
             "type" : "direct_file",
