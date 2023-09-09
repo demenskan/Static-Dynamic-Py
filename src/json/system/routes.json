@@ -17,8 +17,12 @@
             "category_name" : "string"
         }
     },
-    "posts-by-category" : {
-        "instructor" : "post-list.json"
+    "contact" : {
+        "instructor" : "contact.json"
+    },
+    "about" : {
+        "instructor" : "about.json",
+        "arguments" : ""
     },
     "articles" : {
         "instructor" : "single-article.json",

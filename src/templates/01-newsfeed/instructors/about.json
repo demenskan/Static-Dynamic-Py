@@ -1,0 +1,43 @@
+{
+    "layout" : "single-page.html",
+    "single_values" : {
+        "page_title" : "About this project",
+        "template_path" : "templates/01-newsfeed/"
+    },
+    "sections" : {
+        "css-includes" : {
+            "type" : "direct_file",
+            "view_file" : "views/global/css-includes.html"
+        },
+        "header" : {
+            "type" : "parameted_file",
+            //the views' path must be relative to the designed template's folder
+            "view_file" : "views/global/header.html",
+            "parameters" : {
+                "date" : "<script language=javascript> echo('holis'); </script>"
+            }
+        },
+        "navbar" : {
+            "type" : "content_file",
+            "view_file" : "views/global/navbar.html",
+            "content_file" : "json/content/global/navbar.json"
+        },
+        "content" : {
+           "type" : "content_file",
+           "view_file" : "views/about/main.html",
+           "content_file" : "json/content/about/main.json"
+        },
+        "right-column" : {
+            "type" : "direct_file",
+            "view_file" : "views/global/advertising.html"
+        },
+        "js-includes" : {
+            "type" : "direct_file",
+            "view_file" : "views/global/js-includes.html"
+        },
+        "footer" : {
+            "type" : "direct_file",
+            "view_file" : "views/global/footer.html"
+        }
+    }
+}

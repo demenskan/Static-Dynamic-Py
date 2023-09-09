@@ -1,0 +1,38 @@
+{
+    // about page
+    // content/about/main.json
+    "title" : "About this project",
+    "subtitle" : "Let's honor who deserve it",
+    "elements" :  {
+        "0" : {
+            "paragraph" : "The StatDynPy - Static-Dynamic (websites with) Python is a script made by me (demenskan) for my future projects that requires low processing and high availability at low cost. "
+        },
+        "1" : {
+            "paragraph" : "I used some third-party templates for the examples. I choose them because their free-royalty status.  But I'll give the correct credits to them: "
+        },
+        "2" : {
+            "paragraph" : "Next is an example of a table, note that you can now use an array inside the array."
+        },
+        "3" : {
+            "@subview" : "subviews/about/template-credits.html",
+            "title" : "Bootstrap News Template (03) ",
+            "image" : "https://www.free-css.com/assets/images/free-css-templates/page259/news.jpg",
+            "url" : "https://www.free-css.com/free-css-templates/page259/news",
+            "paragraph" : "Responsive, 4 columns"
+        },
+        "4" : {
+            "@subview" : "subviews/about/template-credits.html",
+            "title" : "Bootstrap News Template (03) ",
+            "image" : "https://www.free-css.com/assets/images/free-css-templates/page259/news.jpg",
+            "url" : "https://www.free-css.com/free-css-templates/page259/news",
+            "paragraph" : "Responsive, 4 columns"
+        },
+        "5" : {
+            "@subview" : "subviews/about/template-credits.html",
+            "title" : "Bootstrap News Template (03) ",
+            "image" : "https://www.free-css.com/assets/images/free-css-templates/page259/news.jpg",
+            "url" : "https://www.free-css.com/free-css-templates/page259/news",
+            "paragraph" : "Responsive, 4 columns"
+        }
+    }
+}
