@@ -27,14 +27,19 @@ def GeneralRequest(uri_request):
     if controller not in routes:
         abort(404)
     else:
-        if len(routes[controller]['arguments']) != len(uri_request[1:]):
+        if 'arguments' not in routes[controller]:
+            argument_number=0
+        else:
+            argument_number=len(routes[controller]['arguments'])
+        if  argument_number != len(uri_request[1:]):
             return "Wrong number of arguments! (Must be " + str(len(routes[controller]['arguments'])) + ")"
         else:
-            argindex=1
             arguments = {}
-            for arg in routes[controller]['arguments']:
-                arguments[arg]=uri_request[argindex]
-                argindex+=1
+            if argument_number > 0:
+                argindex=1
+                for arg in routes[controller]['arguments']:
+                    arguments[arg]=uri_request[argindex]
+                    argindex+=1
             return generator.getPage(routes[controller]['instructor'],arguments)
 
 """
