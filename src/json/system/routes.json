@@ -21,8 +21,7 @@
         "instructor" : "contact.json"
     },
     "about" : {
-        "instructor" : "about.json",
-        "arguments" : ""
+        "instructor" : "about.json"
     },
     "articles" : {
         "instructor" : "single-article.json",

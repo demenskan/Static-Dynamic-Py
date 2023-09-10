@@ -15,24 +15,24 @@
         },
         "3" : {
             "@subview" : "subviews/about/template-credits.html",
+            "image" : "/static/global/images/bootstrap-news-template.webp",
             "title" : "Bootstrap News Template (03) ",
-            "image" : "https://www.free-css.com/assets/images/free-css-templates/page259/news.jpg",
             "url" : "https://www.free-css.com/free-css-templates/page259/news",
             "paragraph" : "Responsive, 4 columns"
         },
         "4" : {
             "@subview" : "subviews/about/template-credits.html",
-            "title" : "Bootstrap News Template (03) ",
-            "image" : "https://www.free-css.com/assets/images/free-css-templates/page259/news.jpg",
-            "url" : "https://www.free-css.com/free-css-templates/page259/news",
-            "paragraph" : "Responsive, 4 columns"
+            "title" : "NEWSROOM - Free Bootstrap Magazine Template (02) ",
+            "url" : "https://htmlcodex.com/free-bootstrap-magazine-template/",
+            "image" : "/static/global/images/free-bootstrap-magazine-template.webp",
+            "paragraph" : "NEWSROOM is a lightweight, easy to use, and fully responsive free Bootstrap magazine template perfect for creating professional news, newspaper, news portal, news page, and magazine websites. If you are going to build a magazine website for your news portal, newspaper, or news channel, you can use this free HTML template easily without having any coding knowledge. Developed by html codex."
         },
         "5" : {
             "@subview" : "subviews/about/template-credits.html",
             "title" : "Bootstrap News Template (03) ",
-            "image" : "https://www.free-css.com/assets/images/free-css-templates/page259/news.jpg",
-            "url" : "https://www.free-css.com/free-css-templates/page259/news",
-            "paragraph" : "Responsive, 4 columns"
+            "image" : "/static/global/images/thumbnail_02news.jpg",
+            "url" : "https://htmlcodex.com/free-bootstrap-magazine-template",
+            "paragraph" : "A lightweight, easy to use and fully responsive Bootstrap news template that is suited to build professional news websites, as well as blogs and online magazines. If you are going to build a news website for your newspaper or news channel, you can get started with this free Bootstrap news portal template. Let’s start downloading the free Bootstrap 4 news template."
         }
     }
 }
