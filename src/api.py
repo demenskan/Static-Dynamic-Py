@@ -25,7 +25,10 @@ def GeneralRequest(uri_request):
     routes=generator.read_file(config["ROUTES_FILE"],"json","//")
     #no matches? return 404
     if controller not in routes:
-        abort(404)
+        if '404_ERROR_INSTRUCTOR' not in config:
+            abort(404)
+        else:
+            return generator.getPage(config['404_ERROR_INSTRUCTOR'],{})
     else:
         if 'arguments' not in routes[controller]:
             argument_number=0
