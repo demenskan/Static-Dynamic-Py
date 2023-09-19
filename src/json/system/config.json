@@ -23,5 +23,5 @@
     "CURRENT_TEMPLATE" : "01-newsfeed/",
     //What to show if the request isn't on the routes? this directive points to an instructor in charge to display the 
     //famous 404 not found error. If not defined or empty, the script will send the standard 404 error thru http
-    "404_ERROR_INSTRUCTOR" : "not_found_404.json"
+    //"404_ERROR_INSTRUCTOR" : "not_found_404.json"
 }

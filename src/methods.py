@@ -137,6 +137,8 @@ class Generator:
                     return stream
         except FileNotFoundError :
             return "FileNotFoundError: " + filename
+        except ValueError as e:
+            return "JSON Decode error on " + filename + ": "
 
     def metavariables(self, stream, metavariables_path):
         from functools import reduce
