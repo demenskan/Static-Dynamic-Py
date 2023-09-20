@@ -15,10 +15,10 @@
         },
         "3" : {
             "@subview" : "subviews/about/template-credits.html",
-            "image" : "/static/global/images/bootstrap-news-template.webp",
-            "title" : "Bootstrap News Template (03) ",
-            "url" : "https://www.free-css.com/free-css-templates/page259/news",
-            "paragraph" : "Responsive, 4 columns"
+            "image" : "/static/global/images/newsfeed.jpg",
+            "title" : "Newsfeed (01) ",
+            "url" : "https://www.free-css.com/free-css-templates/page203/newsfeed",
+            "paragraph" : "Responsive, mixed columns"
         },
         "4" : {
             "@subview" : "subviews/about/template-credits.html",
