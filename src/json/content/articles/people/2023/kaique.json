@@ -1,0 +1,54 @@
+{
+    // single post example
+    // content/articles/people/2023/kaique
+    "title" : "Kaike's first visit to NYC",
+    "subtitle" : "Single article with picture",
+    "featured_img" : "/static/global/images/pexels-kaique-rocha-307847.jpg",
+    "featured_caption" : "He took a lot of selfies",
+    "elements" :  {
+        "0" : {
+            "paragraph" : "This is an exaple of a single article. The layout is defined in the instructor page. In order to keep all HTML tags outside the content files is better practics to separate paragraphs by array elements so the tagging is left to the template engine. Even though you have a pre template from your view file, you can override the iterations with the @subview command"
+        },
+        "1" : {
+            "paragraph" : "This is a single paragraph with no modifications. If you need quotations, don't forget to escape the quotation marks \"like this\""
+        },
+        "2" : {
+            "paragraph" : "Next is an example of a table, note that you can now use an array inside the array."
+        },
+        "3" : {
+            "@subview" : "subviews/articles/figure-caption.html",
+            "image" : "/static/global/images/photograph_img2.jpg",
+            "caption" : "This is an exaple of a figure with caption, taking advantage of the <i>@subview</i> directive"
+        },
+        "4" : {
+            "@subview" : "subviews/articles/table-earnings.html",
+            "title" : "Table example",
+            "rows" : {
+                "0" : {
+                    "position" : "Researcher A",
+                    "earnings" : "10k"
+                },
+                "1" : {
+                    "position" : "Researcher B",
+                    "earnings" : "22k"
+                },
+                "2" : {
+                    "position" : "Researcher C",
+                    "earnings" : "35k"
+                }
+            }
+        },
+        "5" : {
+            "@subview" : "subviews/articles/paragraph-subtitle.html",
+            "subtitle" : "Paragraph with subtitle",
+            "paragraph" : "This is an exaple of a paragraph with a subtitle, taking advantage of the <i>@subview</i> directive"
+        },
+        "5" : {
+            "@subview" : "subviews/articles/paragraph-subtitle-left-figure.html",
+            "subtitle" : "Paragraph with subtitle and a figure on left",
+            "image" : "/static/global/images/pexels-cottonbro-studio-4057758.jpg",
+            "caption" : "This is the figure's caption",
+            "paragraph" : "In this example there is a combination of subtitle and a figure located at the top left, this is also the doing of the <i>@subview</i> directive. You can have as many combinations as you want with the overriding of the subtemplate, also, you can use diferent "
+        }
+    }
+}

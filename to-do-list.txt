@@ -1,0 +1,4 @@
+TO DO LIST:
+	- Footer on template01
+	- Instructors & views of templates 02 and 03
+
