@@ -1,0 +1,24 @@
+{
+  "categories" : {
+    "0" : {
+       "name" : "Business",
+       "url" : "/categories/business",
+       "image" : "/static/global/images/cat-500x80-1.jpg"
+    },
+    "1" : {
+       "name" : "Technology",
+       "url" : "/categories/technology",
+       "image" : "/static/global/images/cat-500x80-2.jpg"
+    },
+    "2" : {
+       "name" : "People",
+       "url" : "/categories/people",
+       "image" : "/static/global/images/cat-500x80-3.jpg"
+    },
+    "3" : {
+       "name" : "Sports",
+       "url" : "/categories/sports",
+       "image" : "/static/global/images/cat-500x80-4.jpg"
+    }
+  }
+}

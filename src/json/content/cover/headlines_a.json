@@ -5,30 +5,40 @@
             "url" : "articles/travel/2023/city",
             "image" : "static/global/images/slider_img1.jpg",
             "title" : "The vibrant city!",
-            "description" : "Single article with picture"
+	    "category" : "Travel",
+            "category_url" : "/categories/travel",
+	    "description" : "Single article with picture"
         },
         "1" : {
             "url" : "articles/travel/2023/station",
             "image" : "static/global/images/slider_img2.jpg",
             "title" : "Train station gallery",
+	    "category" : "Travel",
+            "category_url" : "/categories/travel",
             "description" : "Single article with gallery"
         },
         "2" : {
             "url" : "articles/travel/2023/no-image",
             "image" : "",
             "title" : "This article has no featured picture",
+	    "category" : "Travel",
+            "category_url" : "/categories/travel",
             "description" : "Single article without featured picture"
         },
         "3" : {
             "url" : "articles/travel/2023/valley",
             "image" : "static/global/images/slider_img3.jpg",
             "title" : "Valley",
+	    "category" : "Travel",
+            "category_url" : "categories/travel",
             "description" : "Single article with picture"
         },
         "4" : {
             "url" : "articles/travel/2023/beach",
             "image" : "static/global/images/slider_img4.jpg",
             "title" : "The beach",
+	    "category" : "Travel",
+            "category_url" : "/categories/travel",
             "description" : "Single article with picture"
         }
     }
