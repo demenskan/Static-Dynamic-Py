@@ -67,11 +67,10 @@
             "type" : "content_file",
             "view_file" : "views/cover/popular.html",
             "content_file" : "json/content/cover/popular.json"
+        },
+        "footer" : {
+           "type" : "direct_file",
+            "view_file" : "views/global/footer.html"
         }
-//      ,
-//        "footer" : {
-//           "type" : "direct_file",
-//            "view_file" : "views/main/footer.html"
-//        }
     }
 }
