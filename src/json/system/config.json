@@ -20,7 +20,8 @@
     "TEMPLATES_FOLDER" : "templates/",
     //In order to change from template A to B, just a change in this entry should be enough. But make sure that the new one
     // has the same structure than the former. Its a folder, so must have the trailing slash
-    "CURRENT_TEMPLATE" : "01-newsfeed/",
+    //"CURRENT_TEMPLATE" : "01-newsfeed/",
+    "CURRENT_TEMPLATE" : "02-free-bootstrap-magazine-template/",
     //What to show if the request isn't on the routes? this directive points to an instructor in charge to display the 
     //famous 404 not found error. If not defined or empty, the script will send the standard 404 error thru http
     "404_ERROR_INSTRUCTOR" : "not_found_404.json"

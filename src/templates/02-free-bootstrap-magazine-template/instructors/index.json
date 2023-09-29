@@ -1,0 +1,77 @@
+{
+    "layout" : "index.html",
+    "single_values" : {
+        "page_title" : "Website sample with Cirrus-TPM",
+        "template_path" : "templates/02-free-bootstrap-magazine-template/"
+    },
+    "sections" : {
+        //"header" : {
+        //    "type" : "parameted_file",
+            //the views' path must be relative to the designed template's folder
+        //    "view_file" : "views/global/header.html",
+        //    "parameters" : {
+        //        "date" : "Sep. 07, 1930"
+        //    }
+        //},
+        //"navbar" : {
+        //    "type" : "content_file",
+        //    "view_file" : "views/global/navbar.html",
+        //    "content_file" : "json/content/global/navbar.json"
+        //},
+        "latest_news" : {
+           "type" : "content_file",
+           "view_file" : "views/global/latest_news.html",
+           "content_file" : "json/content/cover/latestnews.json"
+        }
+	//,
+        //"social" : {
+        //    "type" : "content_file",
+        //    "view_file" : "views/cover/social.html",
+        //    "content_file" : "json/content/cover/social.json"
+        //},
+        //"slider" : {
+        //    "type" : "content_file",
+        //    "view_file" : "views/cover/slider.html",
+        //    "content_file" : "json/content/cover/headlines_a.json"
+        //},
+        //"latest_postnav" : {
+        //    "type" : "content_file",
+        //    "view_file" : "views/cover/latest_postnav.html",
+        //    "content_file" : "json/content/cover/headlines_b.json"
+        //},
+        //"category_A" : {
+        //    "type" : "content_file",
+        //    "view_file" : "views/cover/category-double-column.html",
+        //    "content_file" : "json/content/cover/category_a.json"
+        //},
+        //"category_B" : {
+        //    "type" : "content_file",
+        //    "view_file" : "views/cover/category-single-column.html",
+        //    "content_file" : "json/content/cover/category_b.json"
+        //},
+        //"category_C" : {
+        //    "type" : "content_file",
+        //    "view_file" : "views/cover/category-single-column.html",
+        //    "content_file" : "json/content/cover/category_c.json"
+        //},
+        //"gallery" : {
+        //    "type" : "content_file",
+        //    "view_file" : "views/cover/gallery.html",
+        //   "content_file" : "json/content/cover/gallery.json"
+        //},
+        //"category_D" : {
+        //    "type" : "content_file",
+        //   "view_file" : "views/cover/category-double-column.html",
+        //    "content_file" : "json/content/cover/category_d.json"
+        //},
+        //"popular_posts" : {
+        //    "type" : "content_file",
+        //    "view_file" : "views/cover/popular.html",
+        //    "content_file" : "json/content/cover/popular.json"
+        //},
+        //"footer" : {
+        //   "type" : "direct_file",
+        //    "view_file" : "views/global/footer.html"
+        // }
+    }
+}
