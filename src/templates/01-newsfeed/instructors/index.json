@@ -6,12 +6,9 @@
     },
     "sections" : {
         "header" : {
-            "type" : "parameted_file",
+            "type" : "direct_file",
             //the views' path must be relative to the designed template's folder
-            "view_file" : "views/global/header.html",
-            "parameters" : {
-                "date" : "Sep. 07, 1930"
-            }
+            "view_file" : "views/global/header.html"
         },
         "navbar" : {
             "type" : "content_file",
