@@ -30,13 +30,12 @@
             "type" : "content_file",
             "view_file" : "views/cover/categories.html",
             "content_file" : "json/content/cover/categories.json"
+        },
+        "featured" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/featured.html",
+            "content_file" : "json/content/cover/featured.json"
         }
-        //,
-        //"featured" : {
-        //    "type" : "content_file",
-        //    "view_file" : "views/cover/featured.html",
-        //    "content_file" : "json/content/cover/featured.json"
-        //}
        //"social" : {
         //    "type" : "content_file",
         //    "view_file" : "views/cover/social.html",

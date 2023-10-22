@@ -1,62 +1,45 @@
 {
     // If you need a collection of items, just number them. The script will ignore the numbers
-    "primary_news" : {
+    "news" : {
         "0" : {
-            "url" : "/news/landscape",
+	    "date": "",
+	    "category" : "",
+	    "url" : "/news/landscape",
             "image" : "static/global/images/slider_img1.jpg",
             "title" : "See this landscape!",
             "description" : "The lansdcape is exquisit to the eyes"
         },
         "1" : {
+	    "date": "",
+	    "category" : "",
             "url" : "/news/vacations",
             "image" : "static/global/images/slider_img2.jpg",
             "title" : "Or maybe this one",
             "description" : "Maybe you like this more"
         },
         "2" : {
+	    "date": "",
+	    "category" : "",
             "url" : "/news/no_image",
             "image" : "",
             "title" : "This article has no image",
             "description" : "why is it blank?"
         },
         "3" : {
+	    "date": "",
+	    "category" : "",
             "url" : "news/just-a-copy",
             "image" : "static/global/images/slider_img3.jpg",
             "title" : "This is a copy of #0",
             "description" : ""
         },
         "4" : {
+	    "date": "",
+	    "category" : "",
             "url" : "/technology",
             "image" : "static/global/images/slider_img4.jpg",
             "title" : "And this of #1",
             "description" : ""
-        }
-    },
-    "secondary_news" : {
-        "0" : {
-            "url" : "/news/landscape",
-            "image" : "static/global/images/post_img1.jpg",
-            "title" : "See this landscape!"
-        },
-        "1" : {
-            "url" : "/news/vacations",
-            "image" : "static/global/images/post_img2.jpg",
-            "title" : "Or maybe this one"
-        },
-        "2" : {
-            "url" : "/news/no_image",
-            "image" : "",
-            "title" : "This article has no image"
-        },
-        "3" : {
-            "url" : "news/just-a-copy",
-            "image" : "static/global/images/post_img1.jpg",
-            "title" : "This is a copy of #0"
-        },
-        "4" : {
-            "url" : "/technology",
-            "image" : "static/global/images/post_img2.jpg",
-            "title" : "And this of #1"
         }
     }
 }
