@@ -19,7 +19,7 @@
             "type" : "content_file",
             //the views' path must be relative to the designed template's folder
             "view_file" : "views/cover/top-news-slider.html",
-	    "content_file" : "json/content/cover/headlines_b.json"
+        "content_file" : "json/content/cover/headlines_b.json"
         },
         "main_slider" : {
             "type" : "content_file",
@@ -35,6 +35,11 @@
             "type" : "content_file",
             "view_file" : "views/cover/featured.html",
             "content_file" : "json/content/cover/featured.json"
+        },
+        "category_A" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/category.html",
+            "content_file" : "json/content/cover/category_a.json"
         }
        //"social" : {
         //    "type" : "content_file",
@@ -45,11 +50,6 @@
         //    "type" : "content_file",
         //    "view_file" : "views/cover/latest_postnav.html",
         //    "content_file" : "json/content/cover/headlines_b.json"
-        //},
-        //"category_A" : {
-        //    "type" : "content_file",
-        //    "view_file" : "views/cover/category-double-column.html",
-        //    "content_file" : "json/content/cover/category_a.json"
         //},
         //"category_B" : {
         //    "type" : "content_file",
