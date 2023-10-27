@@ -9,11 +9,17 @@
             "url" : "articles/people/2023/mrs-cotton",
             "image" : "static/global/images/pexels-cottonbro-studio-4057758.jpg",
             "alt" : "Mrs. cotton",
+            "category" : "People",
+            "category_url" : "/categories/people",
+            "date" : "Jan 1, 2000",
             "title" : "Interview with Mrs. Cotton"
         },
         "1" : {
             "url" : "articles/people/2023/mr-adams",
             "image" : "static/global/images/pexels-pixabay-39866.jpg",
+            "category" : "People",
+            "category_url" : "/categories/people",
+            "date" : "Jan 1, 2000",
             "alt" : "Mr. Adams",
             "title" : "Mr. Adams always study"
         },
@@ -21,12 +27,18 @@
             "url" : "articles/people/2023/trinity",
             "image" : "static/global/images/pexels-trinity-kubassek-445109.jpg",
             "alt" : "",
+            "category" : "People",
+            "category_url" : "/categories/people",
+            "date" : "Jan 1, 2000",
             "title" : "Trinity Kubassek having fun"
         },
         "3" : {
             "url" : "articles/people/2023/kaique",
             "image" : "static/global/images/pexels-kaique-rocha-307847.jpg",
             "alt" : "",
+            "category" : "People",
+            "category_url" : "/categories/people",
+            "date" : "Jan 1, 2000",
             "title" : "Kaique's first visit to NYC"
         }
     }

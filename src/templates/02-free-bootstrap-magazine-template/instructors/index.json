@@ -40,6 +40,21 @@
             "type" : "content_file",
             "view_file" : "views/cover/category.html",
             "content_file" : "json/content/cover/category_a.json"
+        },
+        "category_B" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/category.html",
+            "content_file" : "json/content/cover/category_b.json"
+        },
+        "category_C" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/category.html",
+            "content_file" : "json/content/cover/category_c.json"
+        },
+        "category_D" : {
+            "type" : "content_file",
+           "view_file" : "views/cover/category.html",
+            "content_file" : "json/content/cover/category_d.json"
         }
        //"social" : {
         //    "type" : "content_file",
@@ -51,25 +66,10 @@
         //    "view_file" : "views/cover/latest_postnav.html",
         //    "content_file" : "json/content/cover/headlines_b.json"
         //},
-        //"category_B" : {
-        //    "type" : "content_file",
-        //    "view_file" : "views/cover/category-single-column.html",
-        //    "content_file" : "json/content/cover/category_b.json"
-        //},
-        //"category_C" : {
-        //    "type" : "content_file",
-        //    "view_file" : "views/cover/category-single-column.html",
-        //    "content_file" : "json/content/cover/category_c.json"
-        //},
         //"gallery" : {
         //    "type" : "content_file",
         //    "view_file" : "views/cover/gallery.html",
         //   "content_file" : "json/content/cover/gallery.json"
-        //},
-        //"category_D" : {
-        //    "type" : "content_file",
-        //   "view_file" : "views/cover/category-double-column.html",
-        //    "content_file" : "json/content/cover/category_d.json"
         //},
         //"popular_posts" : {
         //    "type" : "content_file",

@@ -8,24 +8,36 @@
         "0" : {
             "url" : "/articles/business/2023/lawyer",
             "image" : "static/global/images/news-450x350-1.jpg",
+            "category" : "Business",
+            "category_url" : "/categories/business",
+            "date" : "Jan 1, 2000",
             "alt" : "lawyer",
             "title" : "Helping people thru law"
         },
         "1" : {
             "url" : "/articles/business/2023/kids-fashion",
             "image" : "static/global/images/news-500x280-3.jpg",
+            "category" : "Business",
+            "category_url" : "/categories/business",
+            "date" : "Jan 1, 2000",
             "alt" : "kids",
             "title" : "Kids fashion last years"
         },
         "2" : {
             "url" : "/articles/business/2023/kids-games",
             "image" : "static/global/images/news-350x223-3.jpg",
+            "category" : "Business",
+            "category_url" : "/categories/business",
+            "date" : "Jan 1, 2000",
             "alt" : "Kids on computer",
             "title" : "Komputaa: the trendig game"
         },
         "3" : {
             "url" : "/articles/business/2023/kittens",
             "image" : "static/global/images/news-500x280-2.jpg",
+            "category" : "Business",
+            "category_url" : "/categories/business",
+            "date" : "Jan 1, 2000",
             "alt" : "",
             "title" : "Accesories for kittens"
         }

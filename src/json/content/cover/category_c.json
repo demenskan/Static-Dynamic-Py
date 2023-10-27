@@ -8,18 +8,27 @@
         "0" : {
             "url" : "articles/technology/2023/abet-music",
             "image" : "static/global/images/pexels-abet-llacer-919734.jpg",
+            "category" : "Technology",
+            "category_url" : "/categories/technology",
+            "date" : "Jan 1, 2000",
             "alt" : "Abet music",
             "title" : "Look for your sound with AbetMusic"
         },
         "1" : {
             "url" : "articles/technology/2023/pixabay-telescope",
             "image" : "static/global/images/pexels-pixabay-256381.jpg",
+            "category" : "Technology",
+            "category_url" : "/categories/technology",
+            "date" : "Jan 1, 2000",
             "alt" : "Pixabay's telescope",
             "title" : "Pixabay presents their new telescope model"
         },
         "2" : {
             "url" : "articles/technology/2023/markus-editor",
             "image" : "static/global/images/pexels-markus-spiske-177598.jpg",
+            "category" : "Technology",
+            "category_url" : "/categories/technology",
+            "date" : "Jan 1, 2000",
             "alt" : "",
             "title" : "Do more with Markus' editor"
         },
@@ -27,6 +36,9 @@
             "url" : "articles/technology/2023/share-info",
             "image" : "static/global/images/news-300x300-5.jpg",
             "alt" : "",
+            "category" : "Technology",
+            "category_url" : "/categories/technology",
+            "date" : "Jan 1, 2000",
             "title" : "Share info nearby with your smartphone"
         }
     }
