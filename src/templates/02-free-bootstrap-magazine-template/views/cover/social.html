@@ -1,0 +1,13 @@
+                    <div class="pb-3">
+                        <div class="bg-light py-2 px-4 mb-3">
+                            <h3 class="m-0">Follow Us</h3>
+                        </div>
+			{{#social_items}}
+                        <div class="d-flex mb-6">
+			    <a href="{{@social_items:link}}" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: {{@social_items:background}};">
+				<small class="fab fa-{{@social_items:font_awesome_code}} mr-2"></small><small>{{@social_items:followers}} Fans</small>
+                            </a>
+                        </div>
+			{{/social_items}}
+                    </div>
+

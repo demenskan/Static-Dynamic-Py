@@ -55,12 +55,17 @@
             "type" : "content_file",
            "view_file" : "views/cover/category.html",
             "content_file" : "json/content/cover/category_d.json"
+        },
+        "popular_posts" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/popular.html",
+            "content_file" : "json/content/cover/popular.json"
+        },
+        "social" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/social.html",
+            "content_file" : "json/content/cover/social.json"
         }
-       //"social" : {
-        //    "type" : "content_file",
-        //    "view_file" : "views/cover/social.html",
-        //    "content_file" : "json/content/cover/social.json"
-        //},
         //"latest_postnav" : {
         //    "type" : "content_file",
         //    "view_file" : "views/cover/latest_postnav.html",
@@ -70,11 +75,6 @@
         //    "type" : "content_file",
         //    "view_file" : "views/cover/gallery.html",
         //   "content_file" : "json/content/cover/gallery.json"
-        //},
-        //"popular_posts" : {
-        //    "type" : "content_file",
-        //    "view_file" : "views/cover/popular.html",
-        //    "content_file" : "json/content/cover/popular.json"
         //},
         //"footer" : {
         //   "type" : "direct_file",

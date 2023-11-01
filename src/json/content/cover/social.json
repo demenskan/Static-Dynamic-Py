@@ -2,35 +2,59 @@
     "social_items" : {
         "0" : {
                 "class": "facebook",
-                "link" : ""
+		"font_awesome_code" : "facebook-f",
+		"followers" : "100",
+		"background": "#39569E",
+		"link" : ""
             },
         "1" : {
                 "class": "twitter",
+		"font_awesome_code" : "twitter",
+		"followers" : "100",
+		"background": "#52AAF4",
                 "link" : "@demenskan"
             },
         "2" : {
                 "class": "flickr",
+		"font_awesome_code" : "flickr",
+		"followers" : "100",
+		"background": "#FF0084",
                 "link" : ""
             },
         "3" : {
                 "class": "pinterest",
+		"font_awesome_code" : "pinterest",
+		"followers" : "100",
+		"background": "#E60023",
                 "link" : ""
             },
         "4" : {
-                "class": "googleplus",
+                "class": "linkedin",
+		"font_awesome_code" : "linkedin-in",
+		"followers" : "100",
+		"background": "#0185AE",
                 "link" : ""
             },
         "5" : {
                 "class": "vimeo",
+		"font_awesome_code" : "vimeo-v",
+		"followers" : "100",
+		"background": "#1AB7EA",
                 "link" : ""
             },
         "6" : {
                 "class": "youtube",
+		"font_awesome_code" : "youtube",
+		"followers" : "100",
+		"background": "#DC472E",
                 "link" : ""
             },
         "7" : {
                 "class": "mail",
-                "link" : "demenskan@gmail.com"
+		"font_awesome_code" : "envelope",
+		"followers" : "100",
+		"background": "#888888",
+                "link" : "mailto: demenskan@gmail.com"
             }
     }
 }

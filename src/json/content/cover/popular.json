@@ -4,24 +4,36 @@
             "title" : "Running helps your hearth",
             "image" : "/static/global/images/news-500x280-6.jpg",
             "alt" : "",
+            "category" : "Sports",
+            "category_url" : "/categories/sports",
+            "date" : "Jan 1, 2000",
             "link" : "/articles/sports/2023/running"
         },
         "1" : {
             "title" : "The vibrant city!",
             "image" : "/static/global/images/slider_img1.jpg",
             "alt" : "",
+            "category" : "Travel",
+            "category_url" : "/categories/travel",
+            "date" : "Jan 1, 2000",
             "link" : "/articles/travel/2023/city"
         },
         "2" : {
             "title" : "Interview with Mrs. Cotton",
             "image" : "/static/global/images/pexels-cottonbro-studio-4057758.jpg",
             "alt" : "",
+            "category" : "People",
+            "category_url" : "/categories/people",
+            "date" : "Jan 1, 2000",
             "link" : "/articles/people/2023/mrs-cotton"
         },
         "3" : {
             "title" : "The perfect home setup",
             "image" : "/static/global/images/pexels-pixabay-356056.jpg",
             "alt" : "",
+            "category" : "Technology",
+            "category_url" : "/categories/technology",
+            "date" : "Jan 1, 2000",
             "link" : "/articles/technology/2023/perfect-home-setup"
         }
     }
