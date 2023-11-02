@@ -65,20 +65,10 @@
             "type" : "content_file",
             "view_file" : "views/cover/social.html",
             "content_file" : "json/content/cover/social.json"
+        },
+        "footer" : {
+           "type" : "direct_file",
+            "view_file" : "views/global/footer.html"
         }
-        //"latest_postnav" : {
-        //    "type" : "content_file",
-        //    "view_file" : "views/cover/latest_postnav.html",
-        //    "content_file" : "json/content/cover/headlines_b.json"
-        //},
-        //"gallery" : {
-        //    "type" : "content_file",
-        //    "view_file" : "views/cover/gallery.html",
-        //   "content_file" : "json/content/cover/gallery.json"
-        //},
-        //"footer" : {
-        //   "type" : "direct_file",
-        //    "view_file" : "views/global/footer.html"
-        // }
     }
 }

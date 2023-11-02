@@ -1,0 +1,23 @@
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
+ 			        <h3 class="m-0">{{@category_title}}</h3>
+                                <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
+                            </div>
+                        </div>
+			{{#posts}}
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+ 			        <img class="img-fluid w-100" src="{{@posts:image}}" style="object-fit: cover;">
+                                <div class="overlay position-relative bg-light">
+                                    <div class="mb-2" style="font-size: 14px;">
+				        <a href="">{{@posts:category_name}}</a>
+                                        <span class="px-1">/</span>
+					<span>{{@posts:date}}</span>
+                                    </div>
+				    <a class="h4" href="{{@posts:url}}">{{@posts:title}}</a>
+				    <p class="m-0">{{@posts:description}}...</p>
+                                </div>
+                            </div>
+                        </div>
+			{{/posts}}
+

@@ -3,30 +3,45 @@
     "posts" : {
         "0" : {
             "url" : "/articles/business/2023/lawyer",
+	    "category_name" : "Business",
+	    "date" :  "Jan 1, 2000",
+	    "description" : "This lawyer doen't know a no as answer",
             "image" : "/static/global/images/news-450x350-1.jpg",
             "alt" : "lawyer",
             "title" : "Helping people thru law"
         },
         "1" : {
             "url" : "/articles/business/2023/kids-fashion",
+	    "category_name" : "Business",
+	    "date" :  "Jan 1, 2000",
+	    "description" : "This lawyer doen't know a no as answer",
             "image" : "/static/global/images/news-500x280-3.jpg",
             "alt" : "kids",
             "title" : "Kids fashion last years"
         },
         "2" : {
             "url" : "/articles/business/2023/kids-games",
+	    "category_name" : "Business",
+	    "date" :  "Jan 1, 2000",
+	    "description" : "This lawyer doen't know a no as answer",
             "image" : "/static/global/images/news-350x223-3.jpg",
             "alt" : "Kids on computer",
             "title" : "Komputaa: the trendig game"
         },
         "3" : {
             "title" : "Pink Alert",
+	    "category_name" : "Business",
+	    "date" :  "Jan 1, 2000",
+	    "description" : "This lawyer doen't know a no as answer",
             "url" : "/articles/business/2023/pink-alert",
             "image" : "/static/global/images/news-350x223-1.jpg",
             "alt" : ""
         },
         "4" : {
             "url" : "/articles/business/2023/kittens",
+	    "category_name" : "Business",
+	    "date" :  "Jan 1, 2000",
+	    "description" : "The kitten's fashion is lately increasing a lot",
             "image" : "/static/global/images/news-500x280-2.jpg",
             "alt" : "",
             "title" : "Accesories for kittens"

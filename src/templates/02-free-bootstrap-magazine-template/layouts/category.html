@@ -36,7 +36,7 @@
                 </a>
             </div>
             <div class="col-lg-8 text-center text-lg-right">
-                <img class="img-fluid" src="/static/global/images/ads-700x70.jpg" alt="">
+                <img class="img-fluid" src="static/global/images/ads-700x70.jpg" alt="">
             </div>
         </div>
     </div>
@@ -50,67 +50,82 @@
     <!-- Navbar End -->
 
 
-    <!-- Top News Slider Start -->
-    <div class="container-fluid py-3">
-	{{@top_news_slider}}
-    </div>
-    <!-- Top News Slider End -->
-
-
-    <!-- Main News Slider Start -->
-    <div class="container-fluid py-3">
-        <div class="container">
-            <div class="row">
-        {{@main_slider}}
-        {{@categories}}
-            </div>
-        </div>
-    </div>
-    <!-- Main News Slider End -->
-
-
-    <!-- Featured News Slider Start -->
-    <div class="container-fluid py-3">
-        {{@featured}}
-    </div>
-    <!-- Featured News Slider End -->
-
-
-    <!-- Category News Slider Start -->
+    <!-- Breadcrumb Start -->
     <div class="container-fluid">
         <div class="container">
-            <div class="row">
-                {{@category_A}}
-		{{@category_B}}
-		{{@category_C}}
-		{{@category_D}}
-            </div>
+            <nav class="breadcrumb bg-transparent m-0 p-0">
+                <a class="breadcrumb-item" href="/">Home</a>
+                <a class="breadcrumb-item" href="#">Category</a>
+		<span class="breadcrumb-item active">{{@category_title}}</span>
+            </nav>
         </div>
     </div>
-    <!-- Category News Slider End -->
+    <!-- Breadcrumb End -->
+
 
     <!-- News With Sidebar Start -->
     <div class="container-fluid py-3">
         <div class="container">
             <div class="row">
-		<div class="col-lg-8">
-		<!-- Popular News Start -->
-                {{@popular_posts}} 
-		<!-- Popular News End -->
-		</div>
+                <div class="col-lg-8">
+                    <div class="row">
+			{{@categories_content}}
+                    </div>
+                    
+                    <div class="mb-3">
+                        <a href=""><img class="img-fluid w-100" src="/static/global/images/ads-700x70.jpg" alt=""></a>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <nav aria-label="Page navigation">
+                              <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                  <a class="page-link" href="#" aria-label="Previous">
+                                    <span class="fa fa-angle-double-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#" aria-label="Next">
+                                    <span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-lg-4 pt-3 pt-lg-0">
                     <!-- Social Follow Start -->
-		    {{@social}}
                     <!-- Social Follow End -->
+
+                    <!-- Newsletter Start -->
+                    <!-- Newsletter End -->
 
                     <!-- Ads Start -->
                     <div class="mb-3 pb-3">
-                        <a href=""><img class="img-fluid" src="static/global/images/news-500x280-4.jpg" alt=""></a>
+                        <a href=""><img class="img-fluid" src="/static/global/images/news-500x280-4.jpg" alt=""></a>
                     </div>
                     <!-- Ads End -->
+
+                    <!-- Popular News Start -->
+                    <div class="pb-3">
+			{{@popular_news}}
+                    </div>
+                    <!-- Popular News End -->
+
+                    <!-- Tags Start -->
+                    <!-- Tags End -->
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- News With Sidebar End -->
 
@@ -136,9 +151,6 @@
 
     <!-- Template Javascript -->
     <script src="/static/templates/02-free-bootstrap-magazine-template/js/main.js"></script>
-
-    <!-- Custom created functions -->
-    <script src="/static/templates/02-free-bootstrap-magazine-template/js/custom.js"></script>
 </body>
 
 </html>

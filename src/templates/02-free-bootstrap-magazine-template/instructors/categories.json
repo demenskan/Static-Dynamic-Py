@@ -1,0 +1,46 @@
+{
+    "layout" : "category.html",
+    "single_values" : {
+        "page_title" : "Articles by category",
+        "template_path" : "templates/02-free-bootstrap-magazine-template/",
+	"category_title" : "{category_name}"
+    },
+    "sections" : {
+        //"css-includes" : {
+        //    "type" : "direct_file",
+        //    "view_file" : "views/global/css-includes.html"
+        //},
+        //"header" : {
+        //    "type" : "parameted_file",
+            //the views' path must be relative to the designed template's folder
+        //    "view_file" : "views/global/header.html",
+        //    "parameters" : {
+        //        "date" : "<script language=javascript> echo('holis'); </script>"
+        //    }
+        //},
+        "latest_news" : {
+           "type" : "content_file",
+           "view_file" : "views/global/latest_news.html",
+           "content_file" : "json/content/cover/latestnews.json"
+        },
+        "navbar" : {
+            "type" : "content_file",
+            "view_file" : "views/global/navbar.html",
+            "content_file" : "json/content/global/navbar.json"
+        },
+        "categories_content" : {
+            "type" : "content_file",
+            "view_file" : "views/categories/content.html",
+            "content_file" : "json/content/categories/{category_name}.json"
+        },
+        "popular_news" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/popular.html",
+            "content_file" : "json/content/cover/popular.json"
+        },
+        "footer" : {
+            "type" : "direct_file",
+            "view_file" : "views/global/footer.html"
+        }
+    }
+}
