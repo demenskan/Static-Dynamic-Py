@@ -1,0 +1,17 @@
+                    <h2>{{@elements:title}}</h2>
+                    <center>
+                        <table class="styled-table">
+                            <thead>
+                                <th>Position</th>
+                                <th>Earnings</th>
+                            </thead>
+                            <tbody>
+                                {{#rows}}
+                                <tr>
+                                    <td>{{@rows:position}}</td>
+                                    <td>{{@rows:earnings}}</td>
+                                </tr>
+                                {{/rows}}
+                            </tbody>
+                        </table>
+                    </center>

@@ -3,30 +3,45 @@
     "posts" : {
         "0" : {
             "url" : "/articles/sports/2023/running",
+	    "category_name" : "Sports",
+	    "date" :  "Jan 1, 2000",
+	    "description" : "A lot of deseases can be prevented by excercise",
             "image" : "/static/global/images/news-500x280-6.jpg",
             "alt" : "woman running",
             "title" : "Running helps your hearth"
         },
         "1" : {
             "url" : "/articles/sports/2023/injuries",
+	    "category_name" : "Sports",
+	    "date" :  "Jan 1, 2000",
+	    "description" : "Stretching prevents the muscles to get stiff after excercise",
             "image" : "/static/global/images/news-100x100-4.jpg",
             "alt" : "woman stretching",
             "title" : "Always remember to stretch before"
         },
         "2" : {
             "url" : "/articles/sports/2023/zumba-dance",
+	    "category_name" : "Sports",
+	    "date" :  "Jan 1, 2000",
+	    "description" : "Increase your stamina and coordination thru continuous movement",
             "image" : "/static/global/images/news-300x300-3.jpg",
             "alt" : "fitness",
             "title" : "Zumba dance"
         },
         "3" : {
             "title" : "Weight lifting",
+	    "category_name" : "Sports",
+	    "date" :  "Jan 1, 2000",
+	    "description" : "Defeat gravity with constance and discipline",
             "url" : "/articles/sports/2023/weight-lifting",
             "image" : "/static/global/images/news-700x435-2.jpg",
             "alt" : ""
         },
         "4" : {
             "url" : "/articles/sports/2023/music-on-running",
+	    "category_name" : "Sports",
+	    "date" :  "Jan 1, 2000",
+	    "description" : "A good playlist will help you to not get bored",
             "image" : "/static/global/images/news-300x300-1.jpg",
             "alt" : "",
             "title" : "the help of music on running"

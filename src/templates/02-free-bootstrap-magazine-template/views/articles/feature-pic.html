@@ -1,0 +1,14 @@
+			<img class="img-fluid w-100" src="{{@featured_img}}" style="object-fit: cover;" alt="{{@featured_caption}}">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-3">
+			        <a href="/categories/{{@category_name}}">{{@category_name}}</a>
+                                <span class="px-1">/</span>
+				<span>{{@publish_date}}</span>
+                            </div>
+                            <div>
+				<h3 class="mb-3">{{@title}}</h3>
+                		{{#elements}}
+		                    <p>{{@elements:paragraph}}</p>
+		                {{/elements}}
+              		    </div>
+			</div>

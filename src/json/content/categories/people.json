@@ -23,7 +23,7 @@
             "url" : "/articles/people/2023/trinity",
 	    "category_name" : "People",
 	    "date" :  "Jan 1, 2000",
-	    "description" : "Somebody please take those ",
+	    "description" : "Somebody please take those flares out of her! ",
             "image" : "/static/global/images/pexels-trinity-kubassek-445109.jpg",
             "alt" : "",
             "title" : "Trinity Kubassek having fun"
@@ -32,7 +32,7 @@
             "title" : "Josh Bytes: go*gling for living",
 	    "category_name" : "People",
 	    "date" :  "Jan 1, 2000",
-	    "description" : "",
+	    "description" : "And zipping coffee makes you look smarter",
             "url" : "/articles/people/2023/josh-bytes",
             "image" : "/static/global/images/news-300x300-4.jpg",
             "alt" : ""
@@ -41,7 +41,7 @@
             "url" : "/articles/people/2023/kaique",
 	    "category_name" : "People",
 	    "date" :  "Jan 1, 2000",
-	    "description" : "",
+	    "description" : "Trying to not get arrested for jaywalking",
             "image" : "/static/global/images/pexels-kaique-rocha-307847.jpg",
             "alt" : "",
             "title" : "Kaique's first visit to NYC"

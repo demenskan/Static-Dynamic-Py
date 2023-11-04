@@ -6,18 +6,6 @@
 	"category_title" : "{category_name}"
     },
     "sections" : {
-        //"css-includes" : {
-        //    "type" : "direct_file",
-        //    "view_file" : "views/global/css-includes.html"
-        //},
-        //"header" : {
-        //    "type" : "parameted_file",
-            //the views' path must be relative to the designed template's folder
-        //    "view_file" : "views/global/header.html",
-        //    "parameters" : {
-        //        "date" : "<script language=javascript> echo('holis'); </script>"
-        //    }
-        //},
         "latest_news" : {
            "type" : "content_file",
            "view_file" : "views/global/latest_news.html",

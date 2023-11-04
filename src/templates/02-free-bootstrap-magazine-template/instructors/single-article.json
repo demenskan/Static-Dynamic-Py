@@ -1,0 +1,42 @@
+{
+    "layout" : "single-article.html",
+    "single_values" : {
+        "page_title" : "Website sample with StatDynPy",
+        "template_path" : "templates/02-free-bootstrap-magazine-template/"
+    },
+    "sections" : {
+        "latest_news" : {
+           "type" : "content_file",
+           "view_file" : "views/global/latest_news.html",
+           "content_file" : "json/content/cover/latestnews.json"
+        },
+        "navbar" : {
+            "type" : "content_file",
+            "view_file" : "views/global/navbar.html",
+            "content_file" : "json/content/global/navbar.json"
+        },
+        "article-content" : {
+            "type" : "content_file",
+            "view_file" : "{{VAR}}articles_views/{CATEGORY}/{YEAR}.json|{SLUG}:view{{/VAR}}",
+            "content_file" : "json/content/articles/{CATEGORY}/{YEAR}/{SLUG}.json"
+        }
+        //"popular-articles" : {
+        //   "type" : "content_file",
+        //   "view_file" : "views/cover/popular.html",
+        //   "content_file" : "json/content/cover/popular.json"
+        //},
+        //"tabs-tags-related" : {
+        //   "type" : "content_file",
+        //   "view_file" : "views/articles/tabs-tags-related.html",
+        //   "content_file" : "json/content/articles/{CATEGORY}/{YEAR}/{SLUG}-tags-related.json"
+        //},
+        //"js-includes" : {
+        //    "type" : "direct_file",
+        //    "view_file" : "views/global/js-includes.html"
+        //},
+        //"footer" : {
+        //    "type" : "direct_file",
+        //    "view_file" : "views/global/footer.html"
+        // }
+    }
+}

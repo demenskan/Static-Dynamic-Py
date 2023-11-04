@@ -14,7 +14,7 @@
             "url" : "/articles/business/2023/kids-fashion",
 	    "category_name" : "Business",
 	    "date" :  "Jan 1, 2000",
-	    "description" : "This lawyer doen't know a no as answer",
+	    "description" : "You won't believe how much parents spend",
             "image" : "/static/global/images/news-500x280-3.jpg",
             "alt" : "kids",
             "title" : "Kids fashion last years"
@@ -23,7 +23,7 @@
             "url" : "/articles/business/2023/kids-games",
 	    "category_name" : "Business",
 	    "date" :  "Jan 1, 2000",
-	    "description" : "This lawyer doen't know a no as answer",
+	    "description" : "Winning is not an option here",
             "image" : "/static/global/images/news-350x223-3.jpg",
             "alt" : "Kids on computer",
             "title" : "Komputaa: the trendig game"
@@ -32,7 +32,7 @@
             "title" : "Pink Alert",
 	    "category_name" : "Business",
 	    "date" :  "Jan 1, 2000",
-	    "description" : "This lawyer doen't know a no as answer",
+	    "description" : "The app that will revolution the world",
             "url" : "/articles/business/2023/pink-alert",
             "image" : "/static/global/images/news-350x223-1.jpg",
             "alt" : ""

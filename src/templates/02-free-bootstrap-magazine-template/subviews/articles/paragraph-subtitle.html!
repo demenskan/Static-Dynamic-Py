@@ -1,0 +1,5 @@
+                                <h4 class="mb-3">{{@elements:subtitle}}</h4>
+                                <img class="img-fluid w-50 float-right ml-4 mb-2" src="{{@elements:image}}">
+	                        <p>
+				   {{@elements:paragraph}}
+				</p>

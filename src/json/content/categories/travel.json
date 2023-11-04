@@ -4,30 +4,45 @@
         // If you need a collection of items, just number them. The script will ignore the numbers
         "0" : {
             "url" : "/articles/travel/2023/city",
+	    "category_name" : "Travel",
+	    "date" :  "Jan 1, 2000",
+	    "description" : "See what a cosmopolite city like this has to offer",
             "image" : "/static/global/images/slider_img1.jpg",
             "title" : "The vibrant city!",
             "alt" : "Single article with picture"
         },
         "1" : {
             "url" : "/articles/travel/2023/station",
+	    "category_name" : "Travel",
+	    "date" :  "Jan 1, 2000",
+	    "description" : "The confort of modernity in this hi-tech station",
             "image" : "/static/global/images/slider_img2.jpg",
             "title" : "Train station gallery",
             "alt" : "Single article with gallery"
         },
         "2" : {
             "url" : "/articles/travel/2023/no-image",
+	    "category_name" : "Travel",
+	    "date" :  "Jan 1, 2000",
+	    "description" : "They say an image worth a 1000 words. Well, this article doesn't even have words",
             "image" : "",
             "title" : "This article has no featured picture",
             "alt" : "Single article without featured picture"
         },
         "3" : {
             "url" : "/articles/travel/2023/valley",
+	    "category_name" : "Travel",
+	    "date" :  "Jan 1, 2000",
+	    "description" : "Majestic landscapes are shown on this visit.",
             "image" : "/static/global/images/slider_img3.jpg",
             "title" : "Valley",
             "alt" : "Single article with picture"
         },
         "4" : {
             "url" : "/articles/travel/2023/beach",
+	    "category_name" : "Travel",
+	    "date" :  "Jan 1, 2000",
+	    "description" : "Who doesn't like a beach this pure and pristine?",
             "image" : "/static/global/images/slider_img4.jpg",
             "title" : "The beach",
             "alt" : "Single article with picture"
