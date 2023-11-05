@@ -19,10 +19,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/static/templates/02-free-bootstrap-magazine-template/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/static/templates/02-free-bootstrap-magazine-template/css/style.css" rel="stylesheet">
+
+    <!-- custom css for the project -->
+    {{@css-includes}}
 </head>
 
 <body>
@@ -71,67 +74,28 @@
                 <div class="col-lg-8">
                     <!-- News Detail Start -->
                     <div class="position-relative mb-3">
-			{{@article_content}}
+                    {{@article-content}}
                     </div>
                     <!-- News Detail End -->
                 </div>
 
                 <div class="col-lg-4 pt-3 pt-lg-0">
                     <!-- Social Follow Start -->
-                    <div class="pb-3">
-                        <div class="bg-light py-2 px-4 mb-3">
-                            <h3 class="m-0">Follow Us</h3>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #39569E;">
-                                <small class="fab fa-facebook-f mr-2"></small><small>12,345 Fans</small>
-                            </a>
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #52AAF4;">
-                                <small class="fab fa-twitter mr-2"></small><small>12,345 Followers</small>
-                            </a>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #0185AE;">
-                                <small class="fab fa-linkedin-in mr-2"></small><small>12,345 Connects</small>
-                            </a>
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #C8359D;">
-                                <small class="fab fa-instagram mr-2"></small><small>12,345 Followers</small>
-                            </a>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #DC472E;">
-                                <small class="fab fa-youtube mr-2"></small><small>12,345 Subscribers</small>
-                            </a>
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #1AB7EA;">
-                                <small class="fab fa-vimeo-v mr-2"></small><small>12,345 Followers</small>
-                            </a>
-                        </div>
-                    </div>
+                    {{@social}}
                     <!-- Social Follow End -->
 
                     <!-- Newsletter Start -->
-                    <div class="pb-3">
-                        <div class="bg-light py-2 px-4 mb-3">
-                            <h3 class="m-0">Newsletter</h3>
-                        </div>
-                        <div class="bg-light text-center p-4 mb-3">
-                            <p>Aliqu justo et labore at eirmod justo sea erat diam dolor diam vero kasd</p>
-                            <div class="input-group" style="width: 100%;">
-                                <input type="text" class="form-control form-control-lg" placeholder="Your Email">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary">Sign Up</button>
-                                </div>
-                            </div>
-                            <small>Sit eirmod nonumy kasd eirmod</small>
-                        </div>
-                    </div>
                     <!-- Newsletter End -->
 
                     <!-- Ads Start -->
                     <div class="mb-3 pb-3">
-                        <a href=""><img class="img-fluid" src="img/news-500x280-4.jpg" alt=""></a>
+                        <a href=""><img class="img-fluid" src="/static/global/images/news-500x280-4.jpg" alt=""></a>
                     </div>
                     <!-- Ads End -->
+                    <!-- Related news start -->
+
+
+                    <!-- Related news end -->
 
                     <!-- Popular News Start -->
                     <div class="pb-3">
@@ -303,17 +267,19 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/static/templates/02-free-bootstrap-magazine-template/js/jquery-3.4.1.min.js"></script>
+    <script src="/static/templates/02-free-bootstrap-magazine-template/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/templates/02-free-bootstrap-magazine-template/lib/easing/easing.min.js"></script>
+    <script src="/static/templates/02-free-bootstrap-magazine-template/lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <script src="/static/templates/02-free-bootstrap-magazine-template/mail/jqBootstrapValidation.min.js"></script>
+    <script src="/static/templates/02-free-bootstrap-magazine-template/mail/contact.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="/static/templates/02-free-bootstrap-magazine-template/js/main.js"></script>
+    <!-- Custom created functions -->
+    <script src="/static/templates/02-free-bootstrap-magazine-template/js/custom.js"></script>
 </body>
 
 </html>

@@ -5,6 +5,10 @@
         "template_path" : "templates/02-free-bootstrap-magazine-template/"
     },
     "sections" : {
+        "css-includes" : {
+            "type" : "direct_file",
+            "view_file" : "views/global/css-includes.html"
+        },
         "latest_news" : {
            "type" : "content_file",
            "view_file" : "views/global/latest_news.html",
@@ -19,7 +23,12 @@
             "type" : "content_file",
             "view_file" : "{{VAR}}articles_views/{CATEGORY}/{YEAR}.json|{SLUG}:view{{/VAR}}",
             "content_file" : "json/content/articles/{CATEGORY}/{YEAR}/{SLUG}.json"
-        }
+        },
+        "social" : {
+            "type" : "content_file",
+            "view_file" : "views/cover/social.html",
+            "content_file" : "json/content/cover/social.json"
+        },
         //"popular-articles" : {
         //   "type" : "content_file",
         //   "view_file" : "views/cover/popular.html",
