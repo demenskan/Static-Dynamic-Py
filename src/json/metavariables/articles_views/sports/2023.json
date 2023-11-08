@@ -1,17 +1,32 @@
 {
     "weight-lifting" : {
+	"category_name" : "Sports",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Weight lifting",
         "view" : "views/articles/feature-pic.html"
     },
     "injuries" : {
+	"category_name" : "Sports",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Always remember to strech before",
         "view" : "views/articles/feature-pic.html"
     },
     "zumba-dance" : {
+	"category_name" : "Sports",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Zumba dance",
         "view" : "views/articles/feature-pic.html"
     },
     "music-on-running" : {
+	"category_name" : "Sports",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "The help of music on running ",
         "view" : "views/articles/feature-pic.html"
     },
     "running" : {
+	"category_name" : "Sports",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Running helps your heart",
         "view" : "views/articles/feature-pic.html"
     }
 }

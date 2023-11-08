@@ -1,17 +1,32 @@
 {
     "abet-music" : {
+	"category_name" : "Technology",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Look for your sound with AbetMusic",
         "view" : "views/articles/no-pic.html"
     },
     "pixabay-telescope" : {
+	"category_name" : "Technology",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Pixabay presents their new telescope model",
         "view" : "views/articles/gallery.html"
     },
     "markus-editor" : {
+	"category_name" : "Technology",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Do more with Marku's editor",
         "view" : "views/articles/feature-pic.html"
     },
     "perfect-home-setup" : {
+	"category_name" : "Technology",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "The perfect home setup",
         "view" : "views/articles/feature-pic.html"
     },
     "share-info" : {
+	"category_name" : "Technology",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Share your info nearby with your smartphone",
         "view" : "views/articles/feature-pic.html"
     }
 }

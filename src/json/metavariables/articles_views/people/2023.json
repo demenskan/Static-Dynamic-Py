@@ -1,17 +1,32 @@
 {
     "josh-bytes" : {
+	"category_name" : "People",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Josh bytes: go*gling for living",
         "view" : "views/articles/feature-pic.html"
     },
     "mrs-cotton" : {
+	"category_name" : "People",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Interview with Mrs. Cotton",
         "view" : "views/articles/feature-pic.html"
     },
     "mr-adams" : {
+	"category_name" : "People",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Mr. Adams always study",
         "view" : "views/articles/feature-pic.html"
     },
     "trinity" : {
+	"category_name" : "People",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Trinity Kubassek having fun",
         "view" : "views/articles/feature-pic.html"
     },
     "kaique" : {
+	"category_name" : "People",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Kaique's first visit to NYC",
         "view" : "views/articles/feature-pic.html"
     }
 }

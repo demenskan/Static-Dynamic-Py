@@ -58,8 +58,8 @@
         },
         "popular_posts" : {
             "type" : "content_file",
-            "view_file" : "views/cover/popular.html",
-            "content_file" : "json/content/cover/popular.json"
+            "view_file" : "views/global/popular.html",
+            "content_file" : "json/content/global/popular.json"
         },
         "social" : {
             "type" : "content_file",

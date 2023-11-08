@@ -1,17 +1,32 @@
 {
     "kids-fashion" : {
-        "view" : "views/articles/no-pic.html"
+	"category_name" : "Business",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Kids fashion last years",
+	"view" : "views/articles/no-pic.html"
     },
     "kids-games" : {
+	"category_name" : "Business",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Komputaa: the trending game",
         "view" : "views/articles/gallery.html"
     },
     "kittens" : {
+	"category_name" : "Business",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Accesories for kittens",
         "view" : "views/articles/feature-pic.html"
     },
     "lawyer" : {
+	"category_name" : "Business",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Helping people thru law",
         "view" : "views/articles/feature-pic.html"
     },
     "pink-alert" : {
+	"category_name" : "Business",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Pink Alert",
         "view" : "views/articles/feature-pic.html"
     }
 }

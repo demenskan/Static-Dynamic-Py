@@ -25,7 +25,7 @@
     <link href="/static/templates/02-free-bootstrap-magazine-template/css/style.css" rel="stylesheet">
 
     <!-- custom css for the project -->
-    {{@css-includes}}
+    
 </head>
 
 <body>
@@ -57,9 +57,8 @@
     <div class="container-fluid">
         <div class="container">
             <nav class="breadcrumb bg-transparent m-0 p-0">
-                <a class="breadcrumb-item" href="#">Home</a>
-                <a class="breadcrumb-item" href="#">Category</a>
-		<a class="breadcrumb-item" href="#">{{@category_name}}</a>
+                <a class="breadcrumb-item" href="/">Home</a>
+		<a class="breadcrumb-item" href="/categories/{{@category_slug}}">{{@category_name}}</a>
 		<span class="breadcrumb-item active">{{@title}}</span>
             </nav>
         </div>

@@ -1,17 +1,32 @@
 {
     "city" : {
+	"category_name" : "Travel",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "The vibran city!",
         "view" : "views/articles/feature-pic.html"
     },
     "valley" : {
+	"category_name" : "Travel",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Valley",
         "view" : "views/articles/feature-pic.html"
     },
     "no-image" : {
+	"category_name" : "Travel",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "This article has no picture",
         "view" : "views/articles/no-pic.html"
     },
     "station" : {
+	"category_name" : "Travel",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "Train station gallery",
         "view" : "views/articles/gallery.html"
     },
     "beach" : {
+	"category_name" : "Travel",
+	"publish_date" : "Jan 1, 2000",
+	"title" : "The beach",
         "view" : "views/articles/feature-pic.html"
     }
 }
