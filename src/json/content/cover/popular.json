@@ -1,0 +1,40 @@
+{
+    "popular" : {
+        "0" : {
+            "link" : "/articles/sports/2023/running",
+            "image" : "/static/global/images/news-500x280-6.jpg",
+            "alt" : "woman running",
+            "category" : "Sports",
+            "category_link" : "/categories/sports",
+            "date" : "Jan 1, 2000",
+            "title" : "Running helps your hearth"
+        },
+        "1" : {
+            "link" : "/articles/sports/2023/injuries",
+            "image" : "static/global/images/news-100x100-4.jpg",
+            "alt" : "woman stretching",
+            "category" : "Sports",
+            "category_link" : "/categories/sports",
+            "date" : "Jan 1, 2000",
+            "title" : "Always remember to stretch before"
+        },
+        "2" : {
+            "link" : "/articles/sports/2023/zumba-dance",
+            "image" : "static/global/images/news-300x300-3.jpg",
+            "alt" : "fitness",
+            "category" : "Sports",
+            "category_link" : "/categories/sports",
+            "date" : "Jan 1, 2000",
+            "title" : "Zumba dance"
+        },
+        "3" : {
+            "link" : "/articles/sports/2023/music-on-running",
+            "image" : "static/global/images/news-300x300-1.jpg",
+            "alt" : "",
+            "category" : "Sports",
+            "category_link" : "/categories/sports",
+            "date" : "Jan 1, 2000",
+            "title" : "the help of music on running"
+        }
+    }
+}

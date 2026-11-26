@@ -8,7 +8,7 @@ services:
     volumes:
       - ./src:/usr/src/app/
     ports:
-      - "8001:8000"
+      - "8010:8000"
     environment:
       SNAS_DB_HOST: snas_mysql
       SNAS_DB_NAME: snas_ci
